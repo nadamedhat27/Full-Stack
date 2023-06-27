@@ -59,54 +59,104 @@ and we write them when we write code that isn't completely clear or new to this 
     <p class='two' hidden> this is my second paragraph </p>
     <h2> Subtitle1 </h2>
     <!-- 
-        the <b> element is for bold text and for designing text style only
-        the <strong> element is for important bold text and the user should be aware of it
-        the <i> element is for italic text 
-        the <em> element is for important italic text
-            the difference between <i> and <em> is the same difference between <strong> and <b>
-        the <mark> element is for marked text
-        the <u> element is for underlined text
-        the <small> element is for the text that we don't want the user to concentrate on but still it should exist there like "Copyrights"
-        the <del> element is for deleted text and is used to show some text that was wrong and you corrected it , like discounts
-        the <ins> element is for inserted text and is used to show some new added text
-        the <sub> element is subscript like atoms number in a compound
-        the <sup> element is superscript like Power
+        Formatting elements:
+            - the <b> element is for bold text and for designing text style only -> first example.
+            - the <strong> element is for important bold text and the user should be aware of it -> second example.
+            - the <i> element is for italic text -> third example.
+            - the <em> element is for important italic text -> fourth example.
+                  the difference between <i> and <em> is the same difference between <strong> and <b>
+            - the <mark> element is for marked text -> fifth example.
+            - the <u> element is for underlined text -> sixth example.
+            - the <small> element is for the text that we don't want the user to concentrate on but still it should exist there like "Copyrights" -> seventh example.
+            - the <del> element is for deleted text and is used to show some text that was wrong and you corrected it , like discounts -> eighth example.
+            - the <ins> element is for inserted text and is used to show some new added text -> ninth example.
+            - the <sub> element is subscript like atoms number in a compound -> tenth example.
+            - the <sup> element is superscript like Power -> eleventh example
     -->
-    <p> This is my <b> Toturial </b>, Welcome </p>
-    <p> This is my <strong> Toturial </strong>, Welcome </p>
-    <p> This is my <i> Toturial </i>, Welcome </p>
-    <p> This is my <em> Toturial </em>, Welcome </p>
-    <p> This is my <mark> Toturial </mark>, Welcome </p>
-    <p> This is my <u> Toturial </u>, Welcome </p>
-    <p> <small> Copyright </small> </p>
-    <p> This is my <del> Toturial </del> Course, Welcome </p>
-    <p> This is my <ins> Course </ins>, Welcome </p>
-    <p> NH<sub>3</sub> </p>
-    <p> 2<sup>3</sup> = 8 </p>
+    <p id="Formatting-first-example"> This is my <b> Toturial </b>, Welcome </p>
+    <p id="Formatting-second-example"> This is my <strong> Toturial </strong>, Welcome </p>
+    <p id="Formatting-third-example"> This is my <i> Toturial </i>, Welcome </p>
+    <p id="Formatting-fourth-example"> This is my <em> Toturial </em>, Welcome </p>
+    <p id="Formatting-fifth-example"> This is my <mark> Toturial </mark>, Welcome </p>
+    <p id="Formatting-sixth-example"> This is my <u> Toturial </u>, Welcome </p>
+    <p id="Formatting-seventh-example"> <small> Copyright </small> </p>
+    <p id="Formatting-eighth-example"> This is my <del> Toturial </del> Course, Welcome </p>
+    <p id="Formatting-ninth-example"> This is my <ins> Course </ins>, Welcome </p>
+    <p id="Formatting-tenth-example"> NH<sub>3</sub> </p>
+    <p id="Formatting-eleventh-example"> 2<sup>3</sup> = 8 </p>
     <!-- 
-         the <a> element can hold an anchor or link to another page, it's inline element
+        Anchors: 
+         the <a> element can hold an anchor or link to another page, it's inline element -> first example.
             Format: 
                 <a href="link to be added">link text</a>   
          the attribute target descripe were to open this link.
          the attribute title is a global attribute that appears when hover that element.
-         in href attribute you can put a local link in your pc like the second example.
-         if you put an email address the link well open any mail application to contact this email address.
+         in href attribute you can put a local link in your pc -> second example.
+         if you put an email address the link well open any mail application to contact this email address -> third example.
     -->
-    <a href="https://www.amazon.eg/" target="_blank" title="a link to amazon website">amazon</a>
-    <a href="test.html" target="_blank" title="a link to test.html">Test</a>
-    <a href="mailto:someEmail@gmail.com" title="Contact Me">Contact</a>
+    <a id="Anchor-first-example" href="https://www.amazon.eg/" target="_blank" title="a link to amazon website">amazon</a>
+    <a id="Anchor-second-example" href="test.html" target="_blank" title="a link to test.html">Test</a>
+    <a id="Anchor-third-example" href="mailto:someEmail@gmail.com" title="Contact Me">Contact</a>
     <!-- 
         the <img> element is for adding images to the page, it's inline element.
             Format:
                 <img src="the location of image (external link, local path) " alt="the text to be shown in error condition" />
-            external link: first example.
-            local path: second example, we just added the folder name that is besides the html file on the left then the name of the image after it including the extension (.png).
+            external link -> first example.
+            local path -> second example, we just added the folder name that is besides the html file on the left then the name of the image after it including the extension (.png).
                 what if my image is outside the folder holding the html file? -> third example, but not a good choice to make it like that.
-            you can use two attributes (Width and Height) but i don't recommend that, the better is to costmize them in CSS. 
+            you can use two attributes (Width and Height) but i don't recommend that, the better is to costmize them in CSS -> first example. 
     -->
-    <img src="https://html.com/wp-content/uploads/flamingo.jpg" alt="flamingo image" width="200px" height="150px" />
-    <img src="./images/Ain_Shams_logo.png" alt="Ain_Shams_logo1" />
-    <img src="../images/Ain_Shams_logo.png" alt="Ain_Shams_logo2" />
+    <img id="Image-first-example" src="https://html.com/wp-content/uploads/flamingo.jpg" alt="flamingo image" width="200px" height="150px" />
+    <img id="Image-second-example" src="./images/Ain_Shams_logo.png" alt="Ain_Shams_logo1" />
+    <img id="Image-third-example" src="../images/Ain_Shams_logo.png" alt="Ain_Shams_logo2" />
+    <!-- 
+        Lists: it's a block element
+            1- UnOrdered List : Created by element <ul> and inside it some list items <li> -> first example.
+            2- Ordered List : Created by element <ol> and inside it some list items <li> -> second example.
+                - attribute reversed : reverses the order of the list items.
+                - attribute start : starts the list numbers from specific number. 
+                - attribute value : you can put a value in first <li> element to start from specific value by it's index.   
+                - attribute type : specifies the type of the list numbering.
+                    types : ( 1[Numeric], A[Alphabetical Capital Letters], a[Alphabetical Small Letters], I[Romanical Capital Letters], i[Romanical Small Letters]).
+            3- Description List : Created by element <dl> and used for writing a list with description for every item -> third example.
+                -inside it:
+                    1- <dt> : for identifying the item.
+                    2- <dd> : for identifying the description for that item. 
+        
+        - lists can be nested.
+    -->
+    <ul id="List-first-example">
+        <li>things</li>
+        <li>without</li>
+        <li>order
+            <ul>
+                <li>also</li>
+                <li>can be</li>
+                <li>nested</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ol id="List-second-example" type="a">
+        <li value="4">things</li>
+        <li>with</li>
+        <li>order
+            <ol reversed start="8">
+                <li>also</li>
+                <li>can be</li>
+                <li>nested</li>
+            </ol>
+        </li>
+    </ol>
+
+    <dl id="List-third-example">
+        <dt> SomeItem </dt>
+        <dd> Description of that item </dd>
+        <dd> Can have multiple lines</dd>
+        <dt> Some Other Item </dt>
+        <dd> Description for that other item </dd>
+    </dl>
+
     <h3> SubSubtitle1 </h3>
     <h2> Subtitle2 </h2>
     <h3> SubSubtitle2 </h3>
