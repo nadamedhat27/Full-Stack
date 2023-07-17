@@ -375,6 +375,7 @@ and we write them when we write code that isn't completely clear or new to this 
             - there is an attribute called [ autoPlay ] which plays the audio whenever the page loads (not working sometimes) 
             - the [ loop ] anttribute is used to get the audio play again when it finishes
             - the [ muted ] anttribute is used to mute the audio
+            - if the browser doesn't support the audio tag the sentence below will appear instead of it
     -->
     <audio controls autoplay loop muted src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
         <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg" type="audio/ogg">
@@ -384,10 +385,32 @@ and we write them when we write code that isn't completely clear or new to this 
 
     <hr>
 
+    <!--
+        Video : it's inline element
+            all things written for audio also apply on video element, but there is some additional attributes
+            - the attribute [ poster ] : is used to put a temporary image on the video in the page until the video finishes loading
+            - the subelement <track> is used to help people with disablities to watch the video like blind or mute people or to create subtitles on the video
+                - attribute [ src ] : the link to the file, the extension must be .vtt
+                - attribute [ kind ] : what this file is for, (captions, chapters, descriptions, metadata, subtitles)
+                - attribute [ srclang ] : the language of the track, just the appreviation
+                - attribute [ label ] : the name of that language
+            - the attribute [ preload ] : this attribute can lead to the best user experience, (auto, metadata, none) 
+    -->
+    <video controls muted autoplay loop width="100%" height="500px" poster="images/Ain_Shams_logo.png" preload="none">
+        <source src="./media/Search_Google_preview.mp4" type="video/mp4">
+        Your Browser Doesn't support the video tag
+        <track src="file_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+    </video>
+
+    <hr>
+
     <h3> SubSubtitle1 </h3>
     <h2> Subtitle2 </h2>
     <h3> SubSubtitle2 </h3>
     <h3> SubSubtitle2 </h3>
 </body>
+
+</html>
 
 </html>
