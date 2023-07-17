@@ -365,6 +365,24 @@ and we write them when we write code that isn't completely clear or new to this 
     <hr>
     <hr>
 
+    <!--
+        Audio : it's inline element
+            it's used to include audio in the page.
+            Format: 
+                <audio src="the link of the audio (online or local)" type="the mime type of the audio (you can search for the common mime types or the specific type you use easily)"></audio>           
+            - you can also include more than one source (because not all browsers support all types of audio) by using <source> subelement like the example below
+            - in the audio element you should write the attribute [ controls ] to show some controls like stopping button, volume control and some other options, but without that attribute the audio will not appear
+            - there is an attribute called [ autoPlay ] which plays the audio whenever the page loads (not working sometimes) 
+            - the [ loop ] anttribute is used to get the audio play again when it finishes
+            - the [ muted ] anttribute is used to mute the audio
+    -->
+    <audio controls autoplay loop muted src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+        <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg" type="audio/ogg">
+        <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a" type="audio/m4a">
+        Your Browser Doesn't support the audio tag
+    </audio>
+
+    <hr>
 
     <h3> SubSubtitle1 </h3>
     <h2> Subtitle2 </h2>
