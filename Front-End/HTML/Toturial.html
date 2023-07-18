@@ -405,6 +405,31 @@ and we write them when we write code that isn't completely clear or new to this 
 
     <hr>
 
+    <!--
+        Form : it's a block element
+            it's used to create a form, and you can put any element in the <form> element like <div> and <p>, but there is some elements that are preferred to be in this element:
+                - the <input> element : it's inline element and self closing element
+                    this is most important and used element in the form, it's default output is textbox
+                    - the attribute [ type ] : specifies what this input is for, (button, checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week)
+                - the <label> element : it's inline element
+                    this element descripes some info about the input element next to it
+    -->
+    <form>
+        <div>
+            <label>Username</label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password">
+        </div>
+        <br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
     <h3> SubSubtitle1 </h3>
     <h2> Subtitle2 </h2>
     <h3> SubSubtitle2 </h3>
