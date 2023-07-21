@@ -407,29 +407,32 @@ and we write them when we write code that isn't completely clear or new to this 
 
     <!--
         Form : it's a block element
+            - the attribute [ Action ] : this attribute is resbonsible for sending data submitted to a specific distination file
+            - the attribute [ Method ] : this attribute is specifies the method to send the data to the distination file, there is alot of methods but the most common are (GET, POST), GET is sending the data and prints it in the url above while POST is sending the data without printing it in the url above.
             it's used to create a form, and you can put any element in the <form> element like <div> and <p>, but there is some elements that are preferred to be in this element:
                 - the <input> element : it's inline element and self closing element
                     this is most important and used element in the form, it's default output is textbox
                     - the attribute [ type ] : specifies what this input is for, (button, checkbox, color, date, datetime, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week)
                     - the attribute [ required ] : this will not allow the user to submit the form data without typing anything in that input field
                     - the attribute [ placeholder ] : this will appear inside the input field, you can type anything that helps the user to write the needed data well, when the user starts typing the placeholder will be invisible
-                    - the attribute [ value ] : this attribute makes the input field hold somevalue (default value, old value) and will be visible to the user and he can edit it, and if you type it on the submit button the word submit will be changed to what you written.
+                    - the attribute [ value ] : this attribute makes the input field hold somevalue (default value, old value) and will be visible to the user and he can edit it, and if you type it on the submit button the word submit will be changed to what you written
+                    - the attribute [ name ] : specifies the name of the input field before sending the data to the distination file, this helps the distination file to make difference between fields
                 - the <label> element : it's inline element
                     this element descripes some info about the input element next to it
     -->
-    <form>
+    <form action="distination.php" method="get">
         <div>
             <label>Username</label>
-            <input type="text" required>
+            <input type="text" required placeholder="like: myusername12" name="userName">
         </div>
         <br>
         <div>
             <label>Password</label>
-            <input type="password" required placeholder="like: myusername12">
+            <input type="password" required name="pass">
         </div>
         <div>
             <label>Address</label>
-            <input type="text" value="Egypt, cairo">
+            <input type="text" value="Egypt, cairo" name="address">
         </div>
         <br>
         <input type="submit" value="Send">
