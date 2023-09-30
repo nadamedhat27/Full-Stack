@@ -1,6 +1,6 @@
 # Global Intructions
 
-## How to get errors in you webPage
+## How to get errors in your webPage
 
 - ### Right click, and select inspect
 

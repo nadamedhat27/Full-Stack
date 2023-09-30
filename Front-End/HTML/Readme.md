@@ -3,14 +3,15 @@
   Here we will learn the HTML Elements, Its types, and usage.
 
 - ## General in writing the code
-    - We can write the code in more than one line for clarity.
+
+  - We can write the code in more than one line for clarity.
 
 - ## General to all elements
   
   - Our code in html is case insensitive.
   - Every element has opening and closing tags like  `<html>` (opening) `</html>` (closing).
   - But there are elements that is self closed like `<meta />` and `<b />`.
-  - All elements can have attributes, some of them are specialized to a specific element and the other are general to all elements. 
+  - All elements can have attributes, some of them are specialized to a specific element and the other are general to all elements.
   <br />
   These are some of the general attributes:
     - name
@@ -70,6 +71,8 @@
 
     it has 2 elements **ONLY** (Head and Body).
 
+<br />
+
 ----------------------------------------------------------------
 
 - ## Head Element
@@ -84,7 +87,11 @@
     </head> 
     ```
 
-    And now will learn the elements inside the Head Element:
+    And now we will learn the elements written inside the Head Element.
+
+    <br />
+
+  ----------------------------------------------------------------
 
   - ### Meta Elements
 
@@ -97,6 +104,8 @@
       ```
 
       Here charset attribute holds the type of language you want to use (utf-8 holds English and Arabic).
+      
+      <br />
 
       ```html
       <meta name="description" content="This is my toturial, learn html easily." />
@@ -108,6 +117,50 @@
 
       <br />
 
+  ----------------------------------------------------------------
+
+  - ### Title Element
+
+      the Title element holds the title of the page that appears above in the tabs bar.
+      <br />
+      It's written like:
+
+      ```html
+      <title>
+        Some title
+      </title>
+      ``` 
+
 ----------------------------------------------------------------
 
 - ## Body Element
+  
+  The Body element has all contents of the webPage
+  <br /> 
+  like `<p>`, `<dev>` or anything
+
+    <br />
+
+  ----------------------------------------------------------------
+
+  - ### Heading Elements
+
+      Headings are ordered from h1 (Biggest) to h6 (Smallest), h1 is the first level of headings and is the biggest title and when we want to add subtitles to it we use h2 which is level 2 and so on.
+
+      <br />
+
+      It's written like:
+
+      ```html
+      <h1>heading 1</h1>
+      <h2>heading 2</h2>
+      <h3>heading 3</h3>
+      <h4>heading 4</h4>
+      <h5>heading 5</h5>
+      <h6>heading 6</h6>
+      ```
+
+      The output is: 
+      <br />
+      ![Headings](./imgs/Headings.png)
+
