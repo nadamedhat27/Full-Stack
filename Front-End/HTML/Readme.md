@@ -5,6 +5,7 @@
 - ## General in writing the code
 
   - We can write the code in more than one line for clarity.
+  - any spaces between words you write will be translated in the webPage as a single space only.
 
 - ## General to all elements
   
@@ -13,10 +14,9 @@
   - But there are elements that is self closed like `<meta />` and `<b />`.
   - All elements can have attributes, some of them are specialized to a specific element and the other are general to all elements.
   <br />
-  These are some of the general attributes:
-    - name
-    - class
-    - id
+  Some general attributes like ( name, class, id ).
+  - attributes can be added to any element like this `<element attribute="value">`, not always we need the value.
+
   - No difference between single and double quotes in writing the values of attribute, both are same in the webPage, and if the value is only one word you can discard quotes.
 
     ```html
