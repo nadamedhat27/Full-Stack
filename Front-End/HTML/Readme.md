@@ -12,10 +12,10 @@
   - Our code in html is case insensitive.
   - Every element has opening and closing tags like  `<html>` (opening) `</html>` (closing).
   - But there are elements that is self closed like `<meta />` and `<b />`.
-  - All elements can have attributes, some of them are specialized to a specific element and the other are general to all elements.
-  <br />
+  - All elements can have attributes, some of them are specialized to a specific element and the other are general to all elements.  <br />
   Some general attributes like ( name, class, id ).
-  - attributes can be added to any element like this `<element attribute="value">`, not always we need the value.
+
+  - Attributes can be added to any element like this `<element attribute="value">`, and not always we need the value.
 
   - No difference between single and double quotes in writing the values of attribute, both are same in the webPage, and if the value is only one word you can discard quotes.
 
@@ -160,7 +160,33 @@
       <h6>heading 6</h6>
       ```
 
-      The output is: 
+      The output is:
       <br />
       ![Headings](./imgs/Headings.png)
 
+  ----------------------------------------------------------------
+
+  - ### Paragraph Element
+  
+      the `<p>` element is a Block Element that means it have special spaces above, below, right and left, like an unseen box which makes the content clear for the user to read in the webPage.
+      <br />
+      Is written like:
+
+      ```html
+      <p>
+        Some Content
+      </p>
+      ```
+
+      Examples:
+
+      ```html
+      <p class="one"> this is my paragraph </p>
+      <p class='two' hidden> this is my second paragraph </p>
+      ```
+
+      The output is:
+      <br />
+      ![Headings](./imgs/Paragraph.png)
+      <br />
+      Note: The second paragraph is not visible because it has an attribute called hidden.
