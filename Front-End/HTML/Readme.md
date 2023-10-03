@@ -190,3 +190,92 @@
       ![Headings](./imgs/Paragraph.png)
       <br />
       Note: The second paragraph is not visible because it has an attribute called hidden.
+
+  ----------------------------------------------------------------
+
+  - ### Formatting Elements
+      - the `<b>` element is for bold text and for designing text style only.
+        
+        Like:
+
+        ```html
+        <p id="Formatting-first-example"> This is my <b> Toturial </b>, Welcome </p>
+        ```
+
+      - the `<strong>` element is for important bold text and the user should be aware of it. 
+        
+        Like:
+        ```html
+        <p id="Formatting-second-example"> This is my <strong> Toturial </strong>, Welcome </p>
+        ```
+      - the `<i>` element is for italic text.
+        
+        Like:
+
+        ```html
+        <p id="Formatting-third-example"> This is my <i> Toturial </i>, Welcome </p>
+        ```
+
+      - the `<em>` element is for important italic text. 
+        
+        Like:
+      
+        ```html
+        <p id="Formatting-fourth-example"> This is my <em> Toturial </em>, Welcome </p>
+        ```  
+        
+        the difference between `<i>` and `<em>` is the same difference between `<strong>` and `<b>`.
+
+      - the `<mark>` element is for marked text.
+        
+        Like:
+
+        ```html
+        <p id="Formatting-fifth-example"> This is my <mark> Toturial </mark>, Welcome </p>
+        ``` 
+
+      - the `<u>` element is for underlined text.
+        
+        Like:
+
+        ```html
+        <p id="Formatting-sixth-example"> This is my <u> Toturial </u>, Welcome </p>
+        ``` 
+
+      - the `<small>` element is for the text that we don't want the user to concentrate on but still it should exist there like "Copyrights".
+        
+        Like:
+
+        ```html
+        <p id="Formatting-seventh-example"> <small> Copyright </small> </p>
+        ``` 
+
+      - the `<del>` element is for deleted text and is used to show some text that was wrong and you corrected it , like discounts.
+        
+        Like:
+
+        ```html
+        <p id="Formatting-eighth-example"> This is my <del> Toturial </del> Course, Welcome </p>
+        ``` 
+
+      - the `<ins>` element is for inserted text and is used to show some new added text.
+
+          Like:
+
+        ```html
+        <p id="Formatting-ninth-example"> This is my <ins> Course </ins>, Welcome </p>
+        ```
+
+      - the `<sub>` element is subscript like atoms number in a compound.
+
+        Like:
+        ```html
+        <p id="Formatting-tenth-example"> NH<sub>3</sub> </p>
+        ```
+
+      - the `<sup>` element is superscript like Power. 
+        
+        Like:
+        ```html
+        <p id="Formatting-eleventh-example"> 2<sup>3</sup> = 8 </p>
+        ``` 
