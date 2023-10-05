@@ -279,3 +279,34 @@
         ```html
         <p id="Formatting-eleventh-example"> 2<sup>3</sup> = 8 </p>
         ``` 
+
+  ----------------------------------------------------------------
+
+  - ### Anchors 
+      the `<a>` element can hold an anchor or link to another page, it's inline element
+      Format:
+
+      ```html
+      <a href="link to be added">link text</a>
+      ``` 
+            
+      Example:
+      ```html
+      <a id="Anchor-first-example" href="https://www.amazon.eg/" target="_blank" title="a link to amazon website">amazon</a>
+      ```
+      
+      the attribute target describes were to open this link.
+
+      the attribute title is a global attribute that appears when hover that element.
+
+      In href attribute you can put a local link in your pc.
+
+      ```html
+      <a id="Anchor-second-example" href="test.html" target="_blank" title="a link to test.html">Test</a>
+      ```
+      
+      If you put an email address the link well open any mail application to contact this email address.
+
+      ```html
+      <a id="Anchor-third-example" href="mailto:someEmail@gmail.com" title="Contact Me">Contact</a>
+      ```
