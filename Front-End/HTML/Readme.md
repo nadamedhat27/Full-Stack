@@ -310,3 +310,39 @@
       ```html
       <a id="Anchor-third-example" href="mailto:someEmail@gmail.com" title="Contact Me">Contact</a>
       ```
+
+  ----------------------------------------------------------------
+
+  - ### Images
+
+    the `<img>` element is for adding images to the page, it's inline element.
+
+    Format:
+    ```html 
+    <img src="the location of image (external link, local path) " alt="the text to be shown in error condition" />
+    ```
+    
+    - external link: 
+
+    ```html
+    <img id="Image-first-example" src="https://html.com/wp-content/uploads/flamingo.jpg" alt="flamingo image" width="200px" height="150px" />
+    ```
+    you can use two attributes (Width and Height) but I don't recommend that, the better is to customize them in CSS.
+
+    - local path:  
+
+    ```html
+    <img id="Image-second-example" src="./images/Ain_Shams_logo.png" alt="Ain_Shams_logo1" />
+    ```
+
+    We just added the folder name that is besides the html file on the left then the name of the image after it including the extension (.png).
+    
+    - what if my image is outside the folder holding the html file? 
+    
+    ```html
+    <img id="Image-third-example" src="../images/Ain_Shams_logo.png" alt="Ain_Shams_logo2" />
+    ```
+
+    But not a good choice to make it like that.
+
+    
