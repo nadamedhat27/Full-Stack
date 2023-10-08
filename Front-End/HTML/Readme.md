@@ -345,4 +345,81 @@
 
     But not a good choice to make it like that.
 
+  ----------------------------------------------------------------
+
+  - ### Lists 
+    it's a block elements
+ 
+    1- UnOrdered List : Created by element `<ul>` and inside it some list items `<li>`.
     
+    ```html
+    <ul id="List-first-example">
+      <li>things</li>
+      <li>without</li>
+      <li>order
+        <ul>
+          <li>also</li>
+          <li>can be</li>
+          <li>nested</li>
+        </ul>
+      </li>
+    </ul>
+    ```
+    Output:
+
+    ![unorderedListPicture](./imgs/UnorderedList.png)
+
+    2- Ordered List : Created by element `<ol>` and inside it some list items `<li>`.
+      
+    ```html
+    <ol id="List-second-example" type="a">
+      <li value="4">things</li>
+      <li>with</li>
+      <li>order
+        <ol reversed start="8">
+          <li>also</li>
+          <li>can be</li>
+          <li>nested</li>
+        </ol>
+      </li>
+    </ol>
+    ```
+
+    Output:
+
+    ![orderedListPicture](./imgs/OrderedList.png)
+
+      - attribute reversed : reverses the order of the list items.
+  
+      - attribute start : starts the list numbers from specific number.
+       
+      - attribute value : you can put a value in first `<li>` element to start from specific value by it's index.
+          
+      - attribute type : specifies the type of the list numbering.
+ 
+        types : ( 1 [Numeric], A [Alphabetical Capital Letters], a [Alphabetical Small Letters], I [Romanichal Capital Letters], i [Romanichal Small Letters]).
+
+      - lists can be nested.
+       
+    3- Description List : Created by element `<dl>` and used for writing a list with description for every item.
+
+    ```html
+    <dl id="List-third-example">
+      <dt> SomeItem </dt>
+      <dd> Description of that item </dd>
+      <dd> Can have multiple lines</dd>
+      <dt> Some Other Item </dt>
+      <dd> Description for that other item </dd>
+    </dl>
+    ```
+
+    Output:
+
+    ![descriptionListPicture](./imgs/DescriptionList.png)
+
+      inside it:
+ 
+      1- `<dt>` (Data Title) : for identifying the item.
+
+      2- `<dd>` (Data Details) : for identifying the details for that item.
+  
