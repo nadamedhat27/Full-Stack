@@ -423,3 +423,81 @@
 
       2- `<dd>` (Data Details) : for identifying the details for that item.
   
+
+  ----------------------------------------------------------------
+
+  - ### Tables 
+
+    it's a block element
+      
+    - the `<table>` element is used to make a table in the web page, it's a block element.
+      
+    Format:
+    
+    ```html
+    <table class="Tables-first-example" border="1" cellpadding="5px">
+      <thead>
+        <caption> The caption of the table </caption>
+        <tr>
+          <th> First Column Name </th>
+          <th> Second Column Name </th>
+          <th> Third Column Name </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2"> First Column Data1 </td>
+          <td> Second Column Data1 </td>
+          <td> Third Column Data1 </td>
+        </tr>
+        <tr>
+          <td> Second Column Data2 </td>
+          <td> Third Column Data2 </td>
+        </tr>
+        <tr>
+          <td> First Column Data3 </td>
+          <td> Second Column Data3 </td>
+          <td> Third Column Data3 </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"> Footer </td>
+          <td> Third Column Footer </td>
+        </tr>
+      </tfoot>
+    </table>
+    ```
+
+    Output:
+
+    ![TablesPicture](./imgs/Tables.png)
+    - SubElements (All is optional but recommended for organizing the table):
+     
+        - `<thead>` : is for adding header to the table.
+        
+        - `<tbody>` : is for adding data to the table.
+        
+        - `<tfoot>` : is for adding footer to the table.
+        
+        - `<caption>` : is for adding some caption to the table, it's like a title that explains what the table is about.
+
+    - SubSubElements:
+ 
+      - `<th>` : is for adding header to the table, it makes the header in a special formatting from the rest rows.
+
+      - `<tr>` : is for adding a new row.
+        
+      - `<td>` : is for adding data in that row depending on the number of columns expected.
+        
+    - Attributes (not recommended because it has alternates in CSS):
+
+      + border : for making a border.
+
+      + cellpadding : for making a padding.
+
+    - Merging :
+
+      - Columns : remove all of the columns that should be merged except one then write the attribute colspan and the number of these columns.
+
+      - Rows : remove all of the rows that should be merged except one then write the attribute rowspan and the number of these rows. 
