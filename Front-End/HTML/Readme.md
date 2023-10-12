@@ -501,3 +501,26 @@
       - Columns : remove all of the columns that should be merged except one then write the attribute colspan and the number of these columns.
 
       - Rows : remove all of the rows that should be merged except one then write the attribute rowspan and the number of these rows. 
+
+
+  ----------------------------------------------------------------
+
+  - ### Span Element
+    It's inline element.
+    
+    Is used when you want to style a word or a part of a div or any content.
+            
+    Format: 
+
+    ```html
+    content <span> middle content </span> other content
+    ```
+    Example:
+
+    ```html
+    <p>Lorem ipsum dolor sit amet, <span style="color: rgb(255, 255, 255);font-size: 20px; background-color: rgb(0, 158, 26);">consectetur</span> adipisicing elit.</p>
+    ```
+
+    Output:
+
+    ![SpanPicture](./imgs/Span.png)
