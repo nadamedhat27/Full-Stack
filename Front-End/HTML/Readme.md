@@ -506,6 +506,7 @@
   ----------------------------------------------------------------
 
   - ### Span Element
+ 
     It's inline element.
     
     Is used when you want to style a word or a part of a div or any content.
@@ -524,3 +525,30 @@
     Output:
 
     ![SpanPicture](./imgs/Span.png)
+
+
+  ----------------------------------------------------------------
+
+  - ### Break Element
+    
+    It's a Self closing tag (Empty tag).
+
+    Is used to make a new line in the paragraph or any content.
+
+    Format: 
+
+    ```html   
+    content <br /> other content
+    ```
+    
+    Or
+
+    ```html
+    content <br> other content 
+    ```
+
+    Example:
+
+    ```html
+    <p> Lorem ipsum,<br /> dolor sit amet consectetur adipisicing elit.</p>
+    ```
