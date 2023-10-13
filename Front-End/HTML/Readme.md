@@ -552,3 +552,109 @@
     ```html
     <p> Lorem ipsum,<br /> dolor sit amet consectetur adipisicing elit.</p>
     ```
+
+
+  ----------------------------------------------------------------
+
+  - ### Horizontal Rule 
+    
+    It's a block element and it's a self closing tag (Empty tag).
+    
+    Is used to make a horizontal line between elements
+    Format: `<hr>` or `<hr />`.
+
+
+  ----------------------------------------------------------------
+
+  - ### Divisions
+ 
+    Is a block element
+    
+    Is used to contain other elements that are related to each other and make your favorite styling on it without repetition.
+
+    You can use classes and ids to specify each div.
+
+    Example: 
+
+    ```html
+    <div class="Numbers" style="background-color: aqua;">
+        <p> 1 </p>
+        <p> 2 </p>
+        <p> 3 </p>
+    </div>
+
+    <div class="Alphabets" style="background-color: rgb(255, 0, 0);">
+        <p> A </p>
+        <p> B </p>
+        <p> C </p>
+    </div>
+    ```
+
+    Output: 
+
+    ![DivPicture](./imgs/Divisions.png)
+
+
+  ----------------------------------------------------------------
+
+  - ### Entities
+
+    It's a method to print any tag or any special character like it was written in the code
+    - `<` : `&lt;`
+    - `>` : `&gt;`
+    - `&` : `&amp;`
+    - also `&asymp;` -> &asymp; ,  `&copy;` -> &copy;,  `&quot;` -> &quot; and more.. 
+
+    Examble:
+
+    ```html
+    <div> A paragraph &asymp; is written by &lt;p&gt; &quot;element&quot; &copy;</div>
+    ```
+
+    Output:
+
+    ![EntitiesPicture](./imgs/Entities.png)
+
+
+  ----------------------------------------------------------------
+
+  - ### Semantic Elements
+    From HTML5 and all of them are block elements.
+
+    They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
+
+    - in the previous if you want to create navigation bar :
+      ```html
+      <div class="nav"> content </div>
+      ```
+    - but now you can just type :
+      ```html
+      <nav> content </nav>
+      ```
+
+    And then, you can style it easily and quickly without any conflicts and there is more than the examples below.
+    
+    Note: they are not different in performance they just have specific name, I mean the elements in the example below will not be styled at all. 
+
+    ```html
+    <header> some header </header>
+    <nav> link - other link - third link</nav>
+    <section>
+        <section>
+            <article>
+                some article
+            </article>
+            <article>
+                other article
+            </article>
+        </section>
+        <aside>
+            some reference or ads
+        </aside>
+    </section>
+    <footer> Footer </footer>
+    ```
+
+    Output: 
+
+    ![SemanticsPicture](./imgs/Semantics.png)
