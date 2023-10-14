@@ -658,3 +658,95 @@
     Output: 
 
     ![SemanticsPicture](./imgs/Semantics.png)
+
+----------------------------------------------------------------
+
+- ## Dev Break :blush:
+
+  Let's Make some Simple page with divisions and classes only.
+
+  ```html
+  <div class="header">
+        <h2> Logo </h2>
+        <ul>
+            <li> Home </li>
+            <li> About </li>
+            <li> Contact </li>
+            <li> Favorites </li>
+            <li> For You </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="navigation">
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="content">
+        <div class="figure">
+            <img src="" alt="Picture" />
+            <p> Some Caption </p>
+        </div>
+    </div>
+    <div class="sidebar"> SideBar </div>
+    <hr>
+    <div class="footer"> Footer </div>
+    ```
+
+    If you see here, we need to provide a class for everty section of the page.
+
+    Output: 
+
+    ![DivsExPicture](./imgs/Example%201%20(Divs).png)
+
+    Now, Let's make the same simple page using semantic elements.
+
+    ```html
+    <header>
+        <h2> Logo </h2>
+        <ul>
+            <li> Home </li>
+            <li> About </li>
+            <li> Contact </li>
+            <li> Favorites </li>
+            <li> For You </li>
+        </ul>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </nav>
+    <hr>
+    <section>
+        <figure>
+            <img src="" alt="Picture" />
+            <figcaption> Some Caption </figcaption>
+        </figure>
+    </section>
+    <aside> SideBar </aside>
+    <hr>
+    <footer> Footer </footer>
+    ```
+
+    Here, by using the semantic elements we decreased our usage of the classes and the code now is more simple.
+
+    Output: 
+
+    ![SemanticsExPicture](./imgs/Example%202%20(Semantics).png)
+
+    And also, the final view is the same. So, using semantic elements is very important.
