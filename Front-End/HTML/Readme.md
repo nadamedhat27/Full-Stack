@@ -659,94 +659,165 @@
 
     ![SemanticsPicture](./imgs/Semantics.png)
 
-----------------------------------------------------------------
+  ----------------------------------------------------------------
 
-- ## Dev Break :blush:
+  - ### Dev Break :blush:
 
-  Let's Make some Simple page with divisions and classes only.
-
-  ```html
-  <div class="header">
-        <h2> Logo </h2>
-        <ul>
-            <li> Home </li>
-            <li> About </li>
-            <li> Contact </li>
-            <li> Favorites </li>
-            <li> For You </li>
-        </ul>
-    </div>
-    <hr>
-    <div class="navigation">
-        <ul>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-        </ul>
-    </div>
-    <hr>
-    <div class="content">
-        <div class="figure">
-            <img src="" alt="Picture" />
-            <p> Some Caption </p>
-        </div>
-    </div>
-    <div class="sidebar"> SideBar </div>
-    <hr>
-    <div class="footer"> Footer </div>
-    ```
-
-    If you see here, we need to provide a class for everty section of the page.
-
-    Output: 
-
-    ![DivsExPicture](./imgs/Example%201%20(Divs).png)
-
-    Now, Let's make the same simple page using semantic elements.
+    Let's Make some Simple page with divisions and classes only.
 
     ```html
-    <header>
-        <h2> Logo </h2>
-        <ul>
-            <li> Home </li>
-            <li> About </li>
-            <li> Contact </li>
-            <li> Favorites </li>
-            <li> For You </li>
-        </ul>
-    </header>
-    <hr>
-    <nav>
-        <ul>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-        </ul>
-    </nav>
-    <hr>
-    <section>
-        <figure>
-            <img src="" alt="Picture" />
-            <figcaption> Some Caption </figcaption>
-        </figure>
-    </section>
-    <aside> SideBar </aside>
-    <hr>
-    <footer> Footer </footer>
-    ```
+    <div class="header">
+          <h2> Logo </h2>
+          <ul>
+              <li> Home </li>
+              <li> About </li>
+              <li> Contact </li>
+              <li> Favorites </li>
+              <li> For You </li>
+          </ul>
+      </div>
+      <hr>
+      <div class="navigation">
+          <ul>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+          </ul>
+      </div>
+      <hr>
+      <div class="content">
+          <div class="figure">
+              <img src="" alt="Picture" />
+              <p> Some Caption </p>
+          </div>
+      </div>
+      <div class="sidebar"> SideBar </div>
+      <hr>
+      <div class="footer"> Footer </div>
+      ```
 
-    Here, by using the semantic elements we decreased our usage of the classes and the code now is more simple.
+      If you see here, we need to provide a class for everty section of the page.
 
-    Output: 
+      Output: 
 
-    ![SemanticsExPicture](./imgs/Example%202%20(Semantics).png)
+      ![DivsExPicture](./imgs/Example%201%20(Divs).png)
 
-    And also, the final view is the same. So, using semantic elements is very important.
+      Now, Let's make the same simple page using semantic elements.
+
+      ```html
+      <header>
+          <h2> Logo </h2>
+          <ul>
+              <li> Home </li>
+              <li> About </li>
+              <li> Contact </li>
+              <li> Favorites </li>
+              <li> For You </li>
+          </ul>
+      </header>
+      <hr>
+      <nav>
+          <ul>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+          </ul>
+      </nav>
+      <hr>
+      <section>
+          <figure>
+              <img src="" alt="Picture" />
+              <figcaption> Some Caption </figcaption>
+          </figure>
+      </section>
+      <aside> SideBar </aside>
+      <hr>
+      <footer> Footer </footer>
+      ```
+
+      Here, by using the semantic elements we decreased our usage of the classes and the code now is more simple.
+
+      Output: 
+
+      ![SemanticsExPicture](./imgs/Example%202%20(Semantics).png)
+
+      And also, the final view is the same. So, using semantic elements is very important.
+  
+  ----------------------------------------------------------------
+
+  - ### Audio
+
+    It's inline element.
+    
+    It's used to include audio in the page.
+    
+    Format: 
+    
+    ```html
+    <audio src="the link of the audio (online or local)" type="the mime type of the audio (you can search for the common mime types or the specific type you use easily)"></audio>
+    ```           
+    
+    - You can also include more than one source (because not all browsers support all types of audio) by using `<source>` subElement like the example below.
+  
+    - In the audio element you should write the attribute [ controls ] to show some controls like stopping button, volume control and some other options, but without that attribute the audio will not appear.
+
+    - There is an attribute called [ autoPlay ] which plays the audio whenever the page loads (not working sometimes).
+
+    - The [ loop ] attribute is used to get the audio play again when it finishes.
+
+    - The [ muted ] attribute is used to mute the audio.
+    
+    - If the browser doesn't support the audio tag the sentence below will appear instead of it.
+
+    Example:
+
+    ```html
+    <audio controls autoplay loop muted src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+        <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg" type="audio/ogg">
+        <source controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a" type="audio/m4a">
+        Your Browser Doesn't support the audio tag
+    </audio>
+    ``` 
+    
+
+  ----------------------------------------------------------------
+
+  - ### Video
+
+    It's inline element.
+
+    All things written for audio also apply on video element, but there is some additional attributes:
+
+    - The attribute [ poster ] : is used to put a temporary image on the video in the page until the video finishes loading.
+    
+    - The subElement `<track>` is used to help people with disabilities to watch the video like blind or mute people by creating subtitles on the video.
+
+    - The attribute [ src ] : the link to the file, the extension must be .vtt.
+    
+    - The attribute [ kind ] : what this file is for, (captions, chapters, descriptions, metadata, subtitles).
+  
+    - The attribute [ srclang ] : the language of the track, just the abbreviation.
+    
+    - attribute [ label ] : the name of that language.
+    
+    - the attribute [ preload ] : this attribute can lead to the best user experience, (auto, metadata, none). 
+
+    Example:
+
+    ```html
+    <video controls muted autoplay loop width="100%" height="500px" poster="images/Ain_Shams_logo.png" preload="none">
+        <source src="./media/Search_Google_preview.mp4" type="video/mp4">
+        Your Browser Doesn't support the video tag
+        <track src="file_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+    </video>
+    ``` 
+    
