@@ -259,23 +259,43 @@
                     - the attribute [ required ] : this will not allow the user to submit the form data without typing anything in that input field
                     - the attribute [ placeholder ] : this will appear inside the input field, you can type anything that helps the user to write the needed data well, when the user starts typing the placeholder will be invisible
                     - the attribute [ value ] : this attribute makes the input field hold somevalue (default value, old value) and will be visible to the user and he can edit it, and if you type it on the submit button the word submit will be changed to what you written
-                    - the attribute [ name ] : specifies the name of the input field before sending the data to the distination file, this helps the distination file to make difference between fields
+                    - the attribute [ name ] : specifies the name of the input field before sending the data to the distination file, this helps the distination file to make difference between fields.
                 - the <label> element : it's inline element
                     this element descripes some info about the input element next to it
     -->
     <form action="distination.php" method="get">
+        <div>
+            <input type="hidden" required name="user-id">
+        </div>
+        <br>
+        <div>
+            <label>Profile Color</label>
+            <input type="color" name="Color">
+        </div>
+        <br>
         <div>
             <label>Username</label>
             <input type="text" required placeholder="like: myusername12" name="userName">
         </div>
         <br>
         <div>
+            <label>Phone Number</label>
+            <input type="number" name="phoneNumber" min="01000000000" max="100000000000" step="20" value="01111111111">
+        </div>
+        <br>
+        <div>
             <label>Password</label>
             <input type="password" required name="pass">
         </div>
+        <br>
         <div>
             <label>Address</label>
             <input type="text" value="Egypt, cairo" name="address">
+        </div>
+        <br>
+        <div>
+            <label>Rate</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="0">
         </div>
         <br>
         <input type="submit" value="Send">
