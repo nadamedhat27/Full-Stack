@@ -263,10 +263,22 @@
                     - the attribute [ readonly ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will be sent in the request successfully.
                     - the attribute [ disabled ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will not be sent in the request.
                     - the attribute [ autofocus ] : this makes the browser focus on that field whenever the page loads.
-                    - the attribute [ minlength ] : makes a constraine on the user to write at least the minimum length of characters. 
-                    - the attribute [ maxlength ] : makes a constraine on the user to write at much the maximum length of characters. 
+                    - the attribute [ minlength ] : used with the text type input, makes a constraine on the user to write at least the minimum length of characters. 
+                    - the attribute [ maxlength ] : used with the text type input, makes a constraine on the user to write at much the maximum length of characters. 
+                    - the attribute [ checked ] : used with radio type input, makes that radio button field checked initially.
                 - the <label> element : it's inline element
-                    this element descripes some info about the input element next to it
+                    this element descripes some info about the input element after it.
+            Notes:
+                - the radio input options must have the same name, if we didn't do that, the user can select both of them.
+                - if we want to link the label with it's input field we can do like:
+                    ```html
+                    <div>
+                        <input id="m" type="radio" name="gender" value="male" checked>
+                        <label for="m">Male</label>
+                    </div>
+                    ```
+                    and now the user can click the label and automatically select it's input field.
+    
     -->
     <form action="distination.php" method="get">
         <div>
@@ -285,7 +297,7 @@
         <br>
         <div>
             <label>Email</label>
-            <input type="text" name="email" value="email@gmail.com" disabled>
+            <input type="email" name="email" value="email@gmail.com" disabled>
         </div>
         <br>
         <div>
@@ -308,6 +320,31 @@
             <input type="range" name="range" min="0" max="100" step="20" value="0">
         </div>
         <br>
+        <div>
+            <input type="radio" name="gender" value="male" checked>
+            <label>Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="hobbies" value="swimming" checked>
+            <label>Swimming</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="hobbies" value="singing">
+            <label>Singing</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="hobbies" value="playfootball">
+            <label>Playing Football</label>
+        </div>
+        <br>
+        <input type="reset" value="Reset">
         <input type="submit" value="Send">
     </form>
 
