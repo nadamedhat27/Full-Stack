@@ -260,6 +260,11 @@
                     - the attribute [ placeholder ] : this will appear inside the input field, you can type anything that helps the user to write the needed data well, when the user starts typing the placeholder will be invisible
                     - the attribute [ value ] : this attribute makes the input field hold somevalue (default value, old value) and will be visible to the user and he can edit it, and if you type it on the submit button the word submit will be changed to what you written
                     - the attribute [ name ] : specifies the name of the input field before sending the data to the distination file, this helps the distination file to make difference between fields.
+                    - the attribute [ readonly ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will be sent in the request successfully.
+                    - the attribute [ disabled ] : this makes the field read only, and used when there is some info the user need to see but cannot change it and the data of that field will not be sent in the request.
+                    - the attribute [ autofocus ] : this makes the browser focus on that field whenever the page loads.
+                    - the attribute [ minlength ] : makes a constraine on the user to write at least the minimum length of characters. 
+                    - the attribute [ maxlength ] : makes a constraine on the user to write at much the maximum length of characters. 
                 - the <label> element : it's inline element
                     this element descripes some info about the input element next to it
     -->
@@ -275,22 +280,27 @@
         <br>
         <div>
             <label>Username</label>
-            <input type="text" required placeholder="like: myusername12" name="userName">
+            <input type="text" required placeholder="like: myusername12" value="Nada" name="userName" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" value="email@gmail.com" disabled>
         </div>
         <br>
         <div>
             <label>Phone Number</label>
-            <input type="number" name="phoneNumber" min="01000000000" max="100000000000" step="20" value="01111111111">
+            <input type="number" name="phoneNumber" min="01000000000" max="100000000000" step="20" placeholder="01111111111">
         </div>
         <br>
         <div>
             <label>Password</label>
-            <input type="password" required name="pass">
+            <input type="password" required name="pass" minlength="10" maxlength="20">
         </div>
         <br>
         <div>
             <label>Address</label>
-            <input type="text" value="Egypt, cairo" name="address">
+            <input type="text" value="Egypt, cairo" name="address" autofocus>
         </div>
         <br>
         <div>
