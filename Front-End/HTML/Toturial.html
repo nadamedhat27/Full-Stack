@@ -268,6 +268,12 @@
                     - the attribute [ checked ] : used with radio type input, makes that radio button field checked initially.
                 - the <label> element : it's inline element
                     this element descripes some info about the input element after it.
+                - the <select> element : it's inline element
+                    this element makes a drop down list of options to select from. like menu for example.
+                    - the attribute [ multible ] : this allows the user to select more than one option by selecting them with the control button on the keyboard.
+                    - the attribute [ selected ] : this makes that field of options is selected automatically when the page loads.
+                    - the <opiongroup> element : is holding a group of options of the list.
+                    - the <option> element : is holding every single option in the list. 
             Notes:
                 - the radio input options must have the same name, if we didn't do that, the user can select both of them.
                 - if we want to link the label with it's input field we can do like:
@@ -310,6 +316,23 @@
             <input type="password" required name="pass" minlength="10" maxlength="20">
         </div>
         <br>
+        <select name="country" id="country">
+            <optgroup label="Africa">
+                <option value="egypt" selected>Egypt</option>
+                <option value="Libya">Libya</option>
+                <option value="Sudan">Sudan</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="korea">Korea</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="britan">Britan</option>
+                <option value="italy">Italy</option>
+                <option value="german">German</option>
+            </optgroup>
+        </select>
         <div>
             <label>Address</label>
             <input type="text" value="Egypt, cairo" name="address" autofocus>
