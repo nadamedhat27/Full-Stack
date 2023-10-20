@@ -14,11 +14,11 @@ module.exports=mod;
 ***
 ```js 
 #peopleFile
-const Pp=require('./mod');
+const Pp=require('./main');
 console.log(Pp);
 ```
 ***
-`exports` keyword make the avaible for outside the modules file 
+`exports` keyword make them avaible for outside the modules file 
 ### Now let's try to eports all the module now 
 ***
 ```js 
