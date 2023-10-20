@@ -38,13 +38,13 @@ Next follows the authority, which is separated from the scheme by the character 
 
 `?key1=value1&key2=value2` are extra parameters provided to the Web server. Those parameters are a list of key/value pairs separated with the & symbol. The Web server can use those parameters to do extra stuff before returning the resource. Each Web server has its own rules regarding parameters, and the only reliable way to know if a specific Web server is handling parameters is by asking the Web server owner.
 
-## HTPP Protocol
+## HTTP Protocol
 
 The HyperText Transfer Protocol (HTTP) is the underlying network protocol that enables transfer of hypermedia documents on the Web, typically between a browser and a server so that humans can read them.
 
 HTTP is textual (all communication is done in plain text) and stateless (no communication is aware of previous communications). This property makes it ideal for humans to read documents (websites) on the world wide web. However, HTTP can also be used as a basis for **REST** web services from server to server
 
-### HTPP Messages
+### HTTP Messages
 
 #### Requests
 
