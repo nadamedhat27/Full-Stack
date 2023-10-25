@@ -1066,3 +1066,9 @@
     - Word Break Opportunity Element `<wbr>` is used create a new line in the long paragraph when needed. --> `Empty element (Self closed)`
     
     - Bidirectional Isolation Element `<bdi>` is used to isolate the different directions of typing text. like typing English with Arabic with numbers. --> `inline element`
+    
+    - Code Element `<code>` is used to create a container for any code like JavaScript or Python. --> `inline element`
+    
+    - Pre-Formatted text Element `<pre>` is used to create a container like `p` for paragraphs and it understands and keeps all spaces you wrote. --> `block element`
+    
+    - Inline Frame Element `<iframe>` is used to create a mini window that contains another page (Inside our website or not). --> `inline element`
