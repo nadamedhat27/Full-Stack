@@ -1053,3 +1053,16 @@
     Output:
     
     ![formExPicture](./imgs/Form.png)
+
+  ----------------------------------------------------------------
+
+  - ### Other Elements
+    - Quote Element `<q>` is used to hold a quoted phrase like a proverb or an aphorism. `inline element`
+
+    -  Block Quote Element `<blockquote>` is also used to hold a proverb or an aphorism but is used when the proverb is a large paragraph. --> `block element`
+    
+    - Button Element `<button>` is also used create a simple button with a specific functionality. --> `inline-block element`
+    
+    - Word Break Opportunity Element `<wbr>` is used create a new line in the long paragraph when needed. --> `Empty element (Self closed)`
+    
+    - Bidirectional Isolation Element `<bdi>` is used to isolate the different directions of typing text. like typing English with Arabic with numbers. --> `inline element`
