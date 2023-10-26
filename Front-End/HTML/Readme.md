@@ -1072,3 +1072,15 @@
     - Pre-Formatted text Element `<pre>` is used to create a container like `p` for paragraphs and it understands and keeps all spaces you wrote. --> `block element`
     
     - Inline Frame Element `<iframe>` is used to create a mini window that contains another page (Inside our website or not). --> `inline element`
+
+
+----------------------------------------------------------------
+
+- ## Accessibility
+    The accessibility of our website means it's accessible to everyone (including people with disabilities like blind users and people with poor vision).
+
+    The accessibility world is vast and here are 2 videos on YouTube that explain how to work with accessibility as an introduction.
+
+    [Introduction to Accessibility](https://youtu.be/lSqXHePabFo)
+
+    [ARIA And Screen Readers](https://youtu.be/UnTxFfbpqco)
