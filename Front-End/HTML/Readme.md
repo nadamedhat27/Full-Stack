@@ -1066,3 +1066,21 @@
     - Word Break Opportunity Element `<wbr>` is used create a new line in the long paragraph when needed. --> `Empty element (Self closed)`
     
     - Bidirectional Isolation Element `<bdi>` is used to isolate the different directions of typing text. like typing English with Arabic with numbers. --> `inline element`
+    
+    - Code Element `<code>` is used to create a container for any code like JavaScript or Python. --> `inline element`
+    
+    - Pre-Formatted text Element `<pre>` is used to create a container like `p` for paragraphs and it understands and keeps all spaces you wrote. --> `block element`
+    
+    - Inline Frame Element `<iframe>` is used to create a mini window that contains another page (Inside our website or not). --> `inline element`
+
+
+----------------------------------------------------------------
+
+- ## Accessibility
+    The accessibility of our website means it's accessible to everyone (including people with disabilities like blind users and people with poor vision).
+
+    The accessibility world is vast and here are 2 videos on YouTube that explain how to work with accessibility as an introduction.
+
+    [Introduction to Accessibility](https://youtu.be/lSqXHePabFo)
+
+    [ARIA And Screen Readers](https://youtu.be/UnTxFfbpqco)
