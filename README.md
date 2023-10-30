@@ -1,6 +1,7 @@
 # Full-Stack
 
 - ## How to contribute 🤝
+
 1. choose an issue and comment on it that you will take this issue.
 2. Fork the project.
 3. Clone the project on your GitHub Account.
