@@ -2,6 +2,41 @@
 
   Here we will learn the HTML Elements, Its types, and usage.
 
+## Agenda
+
+- [What is HTML?](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#what-is-html)
+- [Why HTML?](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#why-html)
+- [General in writing the code](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#general-in-writing-the-code)
+- [General to all elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#general-to-all-elements)
+- [Comments](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#comments)
+- [DOCTYPE](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#doctype)
+- [HTML Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#html-element)
+  - [Head Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#head-element)
+    - [Meta Elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#meta-elements)
+    - [Title Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#title-element)
+  - [Body Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#body-element)
+    - [Heading Elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#heading-elements)
+    - [Paragraph Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#paragraph-element)
+    - [Formatting Elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#formatting-elements)
+    - [Anchors](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#anchors)
+    - [Images](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#images)
+    - [Lists](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#lists)
+    - [Tables](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#tables)
+    - [Span Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#span-element)
+    - [Break Element](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#break-element)
+    - [Horizontal Rule](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#horizontal-rule)
+    - [Divisions](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#divisions)
+    - [Entities](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#entities)
+    - [Semantic Elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#semantic-elements)
+    - [Dev Break :blush:](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#dev-break-blush)
+    - [Audio](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#audio)
+    - [Video](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#video)
+    - [Forms](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#forms)
+    - [Other Elements](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#other-elements)
+- [Accessibility](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/HTML#accessibility)
+
+----------------------------------------------------------------
+
 - ## What is HTML?
 
   - A short for Hyper Text Markup Language.
@@ -282,7 +317,8 @@
 
   ----------------------------------------------------------------
 
-  - ### Anchors 
+  - ### Anchors
+
       the `<a>` element can hold an anchor or link to another page, it's inline element
       Format:
 
@@ -617,6 +653,7 @@
   ----------------------------------------------------------------
 
   - ### Semantic Elements
+
     From HTML5 and all of them are block elements.
 
     They are elements that can specify what the content is more than divisions by only one word and without the need of classes like divisions.
