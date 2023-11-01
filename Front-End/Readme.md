@@ -1,4 +1,4 @@
-# Global Intructions
+# Global Instructions
 
 ## How to get errors in your webPage
 
