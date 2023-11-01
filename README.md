@@ -6,6 +6,7 @@
 - [How to contribute 🤝](https://github.com/nadamedhat27/Full-Stack#how-to-contribute-)
 
 ----------------------------------------------------------------
+
 - ## What You Need To Learn These Technologies?
   
   - Text Editor (Visual Studio Code, Atom).
@@ -20,7 +21,7 @@
 
   1. Choose an issue and comment on it that you will take this issue.
   2. Fork the project.
-  3. Clone the project on your GitHub Account.
+  3. Clone the forked project.
   4. Create a new branch with the name of the change you're going to do.
   5. Make your changes.
   6. Make sure your styling of the documentation is similar to the original repository documentation.
