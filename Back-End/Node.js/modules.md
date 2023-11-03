@@ -1,80 +1,126 @@
-# Modules in Node.js
+# Node.js Modules
 
-*Module* is the idea of break the globalization of the variable in JS all `variable` can be access but by using the idea of module we introduce the same idea as including libraries **set of functions**
+- ## What is a Module
 
-***
+    A **Module** is a piece of reusable JavaScript code. It could be a `.js` file or a directory containing `.js` files. You can export the content of these files and use them in other files.
 
-```js
-#mainFile
+- ## Module Types 
 
-var mod=['mark','johan','thomas'];
-var mars=[3,2,1];
-module.exports=mod;
-#Now only mod is avaiable 
-```
+    Node.js includes three types of modules: 
 
-***
+    - Built-in (Core) Modules
+    - Local Modules
+    - Third Party Modules 
+        
+    - ### Built-in Modules
 
-```js
-#peopleFile
-const Pp=require('./main');
-console.log(Pp);
-```
+        Node.js comes with some modules out of the box. These modules are available for use when you install Node.js.
+        
+        Common Node.js modules:
 
-***
-`exports` keyword make them available for outside the modules file
+        | Module | Description |
+        | --- | --- |
+        | [http](https://nodejs.org/api/http.html) | http module includes classes, methods and events to create Node.js http server.  |
+        | [url](https://nodejs.org/api/url.html) | url module includes methods for URL resolution and parsing.  |
+        | [querystring](https://nodejs.org/api/querystring.html) | querystring module includes methods to deal with query string.  |
+        | [path](https://nodejs.org/api/path.html) | path module includes methods to deal with file paths.  |
+        | [fs](https://nodejs.org/api/fs.html) | fs module includes classes, methods, and events to work with file I/O.  |
+        | [assert](https://nodejs.org/api/assert.html) | Provides a set of assertion tests. | 
 
-### Now let's try to export all the module now 
+         A complete list can be found [here](https://www.w3schools.com/nodejs/ref_modules.asp).
+         
+        - #### Loading Modules
 
-***
+            You load the module with the `require` function. You need to pass the name of the module you're loading as an argument to the require function.
+        
+            ```js
+            const nameOfModule = require('nameOfModule');
+            ```
+            **Note:** You do not have to name you variable the same name as the module, but it is considered a best practice. Also using `const` ensures that your do not override it.
+            
+            The first line in [`Hello World`](./README.md) example was including `http` module.
+            
+            ```js
+            const http = require('http');
 
-```js
-#main
-var mod=['mark','johan','thomas'];
-var mars=[3,2,1];
+            const hostname = '127.0.0.1';
+            const port = 3000;
 
-module.exports={
-mod,mars
+            const server = http.createServer((req, res) => {
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'text/plain');
+                res.end('Hello World\n');
+            });
 
-};
-```
+            server.listen(port, hostname, () => {
+                console.log(`Server running at http://${hostname}:${port}/`);
+            });
+            ```
 
-***
+    - ### Local Modules
 
-### The otherside
+        Local modules are modules created locally in your Node.js application. These modules include different functionalities of your application in separate files and folders. You can also package it and distribute it via NPM, so that Node.js community can use it. 
+        
+        - #### Creating Modules
+        
+            Let's create a `users` module containing an array of usernames.
+            
+            ```js
+            let userNames = ['Mark', 'John', 'Thomas'];
+            module.exports = userNames; 
+            ```
+            
+            First, you need to define your array, Then you can export it using `module.exports`.
+            
+            **Note:** It doesn't have to be a array, your module can export objects, functions or any data type.
+            
+            You can also have multiple exports.
+        
+        - #### Loading Local Modules
+        
+            To load your local module, as with any other type, you use the `require` function. In this case, the path is './users' (which is referencing the `users.js` file).
 
-***
+            ```js 
+            let userNames = ['Mark', 'John', 'Thomas'];
+            let str = "The quick brown fox jumps over the lazy dog.";
 
-```js
-#people
-const Pp=require('./main');
-console.log(Pp.mod,Pp.mars);
-```
+            function printStr() {
+                console.log(str);
+            }
 
-***
+            module.exports = { userNames, printStr }; 
+            // Only 'userNames' array, and 'printStr' function are exported
+            ```
+            
+            ```js 
+            const users = require('./users');
+            console.log(users);
+            ```
+            Running our application should result in the following output.
 
-### Another way
+            ![mod 1 output](./Docs/modules/mod-1-output.png)
 
-***
+            Multiple exports can be accessed through the dot `.` operator, or specify their names while loading the module.
+            
+            ```js
+            const users = require('./users');
+            console.log(users.userNames);
+            users.printStr();
+            
+            // -- OR --
 
-```js
-#people 
-const{mod ,mars }=require('./main');
-console.log(mod,mars);
-```
+            // Variable names must match with module exports 
+            const { userNames, printStr } = require('./users');
+            console.log(userNames);
+            printStr();
+            ```
+            **Notice** that `str` variable is not exported so it can not be accessed outside `users` module.
 
-***
+            ```js
+            const { str } = require('./users') ;
+            console.log(str); // output -> undefined
+            ```
 
-### Let's see if something might go **wrong**
+            Again running our application should result in the following output.
 
-***
-
-```js people
-const {mod}=require('./main') ;
-console.log(mod,mod.mars);
-```
-
-***
-`mod.mars` is not access ~~the right way~~
-
-#### Let's call it for today
+            ![mod-2-output](./Docs/modules/mod-2-output.png)
