@@ -1,4 +1,4 @@
-# React.js Tutorial 
+# React.js Tutorial Session 3
 
 * ## What is React?
   A JavaScript library for building user interfaces which includes:
