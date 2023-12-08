@@ -239,6 +239,7 @@
       ```
       ```javascript
       import React from 'react';
+      import './card.css';
 
       function Card({ customers }) {
         return (
@@ -266,7 +267,7 @@
      
       ```javascript
       import React from 'react';
-      import Card from './Card'; // Import the Card component
+      import Card from './Card';
       import { v4 as uuid } from 'uuid'; // Import the v4 function from the uuid library
       
       function CardList({ customers }) {
@@ -277,7 +278,7 @@
               <h2>List of Customers:</h2>
               {customers.map((customer) => (
                 // For each customer in the customers array, create a div with a unique key
-                <div key={uuid()} className='card'>
+                <div key={uuid()}>
                   {/* Render the Card component and spread the customer object as props */}
                   <Card {...customer} />
                 </div>
@@ -299,7 +300,6 @@
       function Card({ name, age, phone }) {
           return (
             <div>
-              {/* Display customer name */}
               <h3>Name: {name}</h3>
               <p>Age: {name}</p>
               <p>Phone: {phone}</p>
@@ -323,4 +323,3 @@
        <br />
       ![PropTypes](./imgs/PropTypes.png)
       ![InspectOfPropTypes](./imgs/InspectOfPropTypes.png)
---------------------------------------------------------------------------------------------------------------------------------
