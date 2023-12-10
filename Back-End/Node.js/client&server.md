@@ -1,4 +1,4 @@
-ip address and domain 
+# ip address and domain 
 
 
 in node we manually create server to request from browser 
@@ -7,7 +7,11 @@ to require a core http module
 use method 
 call back function   gonna run every time a request
 
-creatimg a server 
+
+---------------------------
+
+
+# creatimg a server 
 
 
 comes in  in our server
@@ -18,8 +22,10 @@ we have to invoke the listen method
 we need to pass in an argument into this
 
 
+----------------------------
 
-localhost and port number 
+
+# localhost and port number 
 
 
 port number  we goin listen to two argument server.listen
