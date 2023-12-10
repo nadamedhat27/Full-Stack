@@ -1,5 +1,11 @@
-request object 
-lets investigate request 
+# request object 
+
+
+
+lets investigate request object more closer 
+
+-----------------------
+
 
 ```
 const server= http.createServer((req,res)=>{
@@ -7,7 +13,10 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
-in the terminal will load different things of object it contains headers ,response type,URL(the user has visited)
+
+
+ >in the terminal will load different things of object it contains headers ,response type,URL(the user has visited)
+
 
 ```
 const server= http.createServer((req,res)=>{
@@ -15,14 +24,17 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
-/the root of the website ,the method is GET request 
 
-response object 
+> /the root of the website ,the method is GET request 
+
+# response object 
 
 we want to formulate some kind of response for the request of the user by the browser
 first thing first is to formulate the response headers give the browser "what kind of response is coming back to it "
 (text -html -json .... etc )
 also headers can set cookies 
+
+----------------------------------------
 
 ```
 const server= http.createServer((req,res)=>{
@@ -33,7 +45,11 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
+
 -------------------------------------
+
+
+
 ```
 const server= http.createServer((req,res)=>{
     console.log(req.url,req.method);
@@ -44,9 +60,12 @@ const server= http.createServer((req,res)=>{
 
 ```
 
-returning html pages 
 
-lets be more defined and instead of returing resonse with the tags or plain text ,return html page
+>returning html pages 
+
+>lets be more defined and instead of returing resonse with the tags or plain text ,return html page
+
+
 
 ```
 const fs=require ('fs');
@@ -67,7 +86,9 @@ const server= http.createServer((req,res)=>{
 
 ```
 
-basic routing 
+# basic routing 
+
+
  now we have a lot of route directory to handle it 
 
 ```
@@ -101,14 +122,21 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
-status code 
-status code describe the type of response sent to the browser 
-200 = ok 
-301 = resource moved 
-404-not found 
-500-internal server error
 
-lets try this 
+
+# status code 
+
+
+status code describe the type of response sent to the browser 
+
+
+>200 = ok 
+>301 = resource moved 
+>404-not found 
+>500-internal server error
+
+### lets try this 
+
 
 ```
 const fs=require ('fs');
@@ -144,6 +172,7 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
+
 try to redirect your response ;)
 
 
