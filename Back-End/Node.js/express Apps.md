@@ -99,5 +99,5 @@ res.sendFile(./404.html',{root:__dirname});
 
 ```
 
->use function is going fir for every single request coming in 
->but only if the request reaches this point in the
+>use function is going fire for every single request coming in 
+>but only if the request reaches this point in the code 
