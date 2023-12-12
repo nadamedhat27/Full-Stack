@@ -34,8 +34,8 @@
         
         The output is:
             <br />
-            ![Headings](./imgs/Hello,JSX!.png)
-            ![Headings](./imgs/InspectOfFragment.png)
+            ![Hello,JSX!](./imgs/Hello,JSX!.png)
+            ![InspectOfFragment](./imgs/InspectOfFragment.png)
 ----------------------------------------------------------------
 * ## Styling
   * ### Inline Style
@@ -64,7 +64,7 @@
       ```
         The output is:
           <br />
-          ![Headings](./imgs/InlineStyle.png)
+          ![InlineStyle](./imgs/InlineStyle.png)
   * ### CSS Classes
     * In React, you can add CSS classes to components using the className attribute. This attribute allows you to specify one or more CSS classes for a component, and it's commonly used to style components. Here's how to add CSS classes to React components:
       
@@ -116,7 +116,7 @@
       ```
         The output is:
           <br />
-          ![Headings](./imgs/CSSModules.png)
+          ![CSSModules](./imgs/CSSModules.png)
 ----------------------------------------------------------------
 * ## Fetch data inside JSX with map
   1. We define an array called `customers`, where each element is an object representing a customer with `name`, `age`, and `phone` properties.
@@ -155,7 +155,7 @@
         ```
         The output is:
           <br />
-          ![Headings](./imgs/CustomerList.png)
+          ![CustomerList](./imgs/CustomerList.png)
 ----------------------------------------------------------------
 * ## Component Props
   * In React, "props" is short for "properties," and they are a fundamental concept for passing data from one component to another. Props are used to send information from a parent component to a child component. Here's an explanation of props in React:
@@ -215,5 +215,111 @@
 
          The output is:
           <br />
-          ![Headings](./imgs/CustomerListWithProps.png)
+          ![CustomerListWithProps](./imgs/CustomerListWithProps.png)
      * Now you can use this `Card` component by passing a list of customers as a prop when rendering it in your main application.
+----------------------------------------------------------------
+* ## Conditional Rendering
+   * You can create a conditional rendering of styles in the Card component based on the age of the customers.
+        Here's how you can achieve conditional styling based on age in the `Card` component:
+      
+      ```CSS
+      /* YourComponent.css */
+      .older, .younger{
+        border: 1px solid black;
+        margin: 8px;
+        width: 350px;
+      }
+      .older {
+        background-color: green;
+      }
+      
+      .younger {
+        background-color: yellow;
+      }
+      ```
+      ```javascript
+      import React from 'react';
+      import './card.css';
+
+      function Card({ customers }) {
+        return (
+          <div>
+            <h2>List of Customers:</h2>
+              {customers.map((customer, index) => (
+                <div key={index} className={customer.age >= 30 ? 'older' : 'younger'}>
+                  <h3>Name: {customer.name}</h3>
+                  <p>Age: {customer.age}</p>
+                  <p>Phone: {customer.phone}</p>
+                </div>
+              ))}
+          </div>
+        );
+      }
+      
+      export default Card;
+      ```
+      The output is:
+       <br />
+       ![ConditionalRendering](./imgs/ConditionalRendering.png)
+--------------------------------------------------------------------------------------------------------------------------------
+* ## uuid
+   * `uuid` library is commonly used in React to generate unique identifiers. These unique identifiers are often used as keys for elements in lists, ensuring that each element has a distinct identity. Let's look at a simple example using React code:
+     
+      ```javascript
+      import React from 'react';
+      import Card from './Card';
+      import { v4 as uuid } from 'uuid'; // Import the v4 function from the uuid library
+      
+      function CardList({ customers }) {
+        return (
+          <div>
+            <h1>Customer Dashboard</h1>
+            <div>
+              <h2>List of Customers:</h2>
+              {customers.map((customer) => (
+                // For each customer in the customers array, create a div with a unique key
+                <div key={uuid()}>
+                  {/* Render the Card component and spread the customer object as props */}
+                  <Card {...customer} />
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      }
+      
+      export default CardList;
+      ```
+--------------------------------------------------------------------------------------------------------------------------------
+* ## PropTypes
+   * `PropTypes` is a library in React that allows you to specify the types of data expected for each prop in a React component. It helps catch bugs related to incorrect data types or missing props during development.
+        ```javascript
+      import React from 'react';
+      import PropTypes from 'prop-types';
+      
+      function Card({ name, age, phone }) {
+          return (
+            <div>
+              <h3>Name: {name}</h3>
+              <p>Age: {name}</p>
+              <p>Phone: {phone}</p>
+            </div>
+          );
+      }
+      
+      export default Card;
+      
+      // Define PropTypes for the Card component to specify the expected prop types
+      Card.propTypes = {
+        // Expecting a string for the 'name', required
+        name: PropTypes.string.isRequired,
+        // Expecting a number for the 'age' (optional)
+        age: PropTypes.number,
+        // Expecting a string for the 'phone', required
+        phone: PropTypes.string.isRequired,
+      };
+      ```
+      The output is:
+       <br />
+      ![PropTypes](./imgs/PropTypes.png)
+      ![InspectOfPropTypes](./imgs/InspectOfPropTypes.png)
