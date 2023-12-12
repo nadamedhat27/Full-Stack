@@ -1,7 +1,6 @@
 # ip address and domain 
 
 
-
 in node we manually create server to request from browser 
 actively for request and response to it 
 to require a core http module
@@ -13,7 +12,6 @@ call back function   gonna run every time a request
 
 
 # creatimg a server 
-
 
 
 comes in  in our server
@@ -28,7 +26,6 @@ we need to pass in an argument into this
 
 
 # localhost and port number 
-
 
 
 port number  we goin listen to two argument server.listen

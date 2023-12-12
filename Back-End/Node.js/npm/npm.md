@@ -1,6 +1,5 @@
 # 3rd party packages 
 
-
 packages that is not part of the core Node.js library. These dependencies can be used to add new features to your Node.js application, or to improve the performance or reliability of your application.
 
 
@@ -30,7 +29,6 @@ npm init
 
 # another example install a upper case package 
 
-
 ```
 C:\Users\Your Name>npm install upper-case 
 
@@ -38,7 +36,6 @@ C:\Users\Your Name>npm install upper-case
 
 
 -------------------------
-
 
 
 ```
@@ -61,14 +58,12 @@ http.createServer(function (req, res) {
 -------------------------------------
 
 
-
 ```
 C:\Users\Your Name>node demo_uppercase.js 
 
 ```
 
  # dependencies and sharing code 
-
 
 the sharing of the code will be hard as load of different packages and dependencies inside it 
 send them or upload them you aren't going to see node modules folders 

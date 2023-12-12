@@ -7,7 +7,6 @@ lets investigate request object more closer
 -----------------------
 
 
-
 ```
 const server= http.createServer((req,res)=>{
     console.log(req);
@@ -17,7 +16,6 @@ const server= http.createServer((req,res)=>{
 
 
  >in the terminal will load different things of object it contains headers ,response type,URL(the user has visited)
-
 
 
 ```
@@ -30,7 +28,6 @@ const server= http.createServer((req,res)=>{
 > /the root of the website ,the method is GET request 
 
 # response object 
-
 
 we want to formulate some kind of response for the request of the user by the browser
 first thing first is to formulate the response headers give the browser "what kind of response is coming back to it "
@@ -70,7 +67,6 @@ const server= http.createServer((req,res)=>{
 
 
 
-
 ```
 const fs=require ('fs');
 const server= http.createServer((req,res)=>{
@@ -91,7 +87,6 @@ const server= http.createServer((req,res)=>{
 ```
 
 # basic routing 
-
 
 
  now we have a lot of route directory to handle it 
@@ -143,7 +138,6 @@ status code describe the type of response sent to the browser
 ### lets try this 
 
 
-
 ```
 const fs=require ('fs');
 const server= http.createServer((req,res)=>{
@@ -178,7 +172,6 @@ const server= http.createServer((req,res)=>{
 });
 
 ```
-
 
 try to redirect your response ;)
 
