@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <div class="demo">
+        <p id="first">first paragraph</p>
+        <p id="second">second paragraph</p>
+        <p id="third">third paragraph</p>
+    </div>
+
+    <div>
+        <h3>another temperory div.</h3>
+        <img class="somthing" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="google photo">
+        <p class="something">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ipsum molestiae libero necessitatibus dolorum tempora, blanditiis ducimus nobis voluptate totam deleniti ex earum expedita eos provident atque ratione quibusdam soluta.</p>
+
+        <form id="form1" action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("first"); // --> id
+        document.getElementsByTagName("img"); // --> tag name
+        document.getElementsByClassName("something"); // --> class name
+        document.querySelectorAll("div.somthing"); // css selectors
+        document.forms["form1"]; // --> collection
+    </script>
+
+</body>
+
+</html>
