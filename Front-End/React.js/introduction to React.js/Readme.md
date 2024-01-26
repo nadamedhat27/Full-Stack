@@ -161,7 +161,7 @@
         ```
         The output is:
             <br />
-            ![Headings](./imgs/Hello,JSX!.png)
+            ![Hello,JSX!](./imgs/Hello,JSX!.png)
     * In the example above, JSX is used to define the structure of the component. It looks like HTML, but it's actually JavaScript. JSX allows you to:
         1. **Create and define React elements**: In the example, `<div>`, `<h1>`, and `<p>` are all React elements, created with JSX.
         
