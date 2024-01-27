@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <h1 id="header1">Big Title</h1>
+
+    <button onclick="changeHeader()">Click to change title</button>
+
+    <script>
+        person = {
+            name: "John",
+            age: 31,
+            city: "New York"
+        };
+
+        function changeHeader() {
+            document.getElementById("header1").innerHTML = person.name + " " + person.age + " " + person.city;
+        }
+    </script>
+</body>
+
+</html>
