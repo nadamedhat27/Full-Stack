@@ -1,11 +1,20 @@
 # Full-Stack
 
-## Agenda
+## Agenda 📑
 
-- [What You Need To Learn These Technologies?](https://github.com/nadamedhat27/Full-Stack#what-you-need-to-learn-these-technologies)
+- [Table of Contents](https://github.com/nadamedhat27/Full-Stack#table-of-contents) 🔖
+- [What You Need To Learn These Technologies?](https://github.com/nadamedhat27/Full-Stack#what-you-need-to-learn-these-technologies) 💡
 - [How to contribute 🤝](https://github.com/nadamedhat27/Full-Stack#how-to-contribute-)
 
 ----------------------------------------------------------------
+- ## Table of Contents
+
+  ### JavaScript
+  | Sessions | Description |
+  |------|------|
+  | [Session 1](./Javascript/Session%201/) | <ul> <li>Introduction to JavaScript <li>How to link? <li> Output <li>Variables <li> Operators <li> Data Types <li> Functions <li> Objects <li> If statements <li> Switch case <li> For loop <li> For/in loop <li> For/of loop <li> While loop <li> Break & Continue <li> Arrow functions <li> Modules <li> Classes <li> Intro to JSON   </ul> |
+  | [Session 2](./Javascript/Session%202/) | <ul> <li> DOM <li> BOM </ul> |
+  
 
 - ## What You Need To Learn These Technologies?
   
