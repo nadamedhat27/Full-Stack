@@ -8,14 +8,12 @@
 ----------------------------------------
 
 
-
 ```
 $ mkdir gfg
 $ cd gfg 
 ```
 
 ######gfgf->file name
-
 
 
 ```
@@ -29,7 +27,6 @@ $ npm install express --save
 
 
 # creating an express app 
-
 
 
 ```
@@ -47,7 +44,6 @@ res.send("Welocme !");
 
  we can do that by adding multiple of these ```app.get()``` command get 
   handlers 
-
 
 
 
@@ -84,7 +80,6 @@ we need to handle a 404 case
 
 
 
-
 ```
 const express = require('express');
 const app = express();
@@ -104,6 +99,5 @@ res.sendFile(./404.html',{root:__dirname});
 
 ```
 
->use function is going fire for every single request coming in 
->but only if the request reaches this point in the code 
-
+>use function is going fir for every single request coming in 
+>but only if the request reaches this point in the
