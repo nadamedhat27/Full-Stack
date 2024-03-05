@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <h1 id="header1">Big Title</h1>
+
+    <button onclick="changeHeader()">Click to change title</button>
+
+    <script>
+        person = '{"name": "John", "age": "31", "birthDate":"1992-5-23", "city": "New York"}';
+        personObject = JSON.parse(person);
+        personObject.birthDate = new Date(personObject.birthDate);
+
+        person2 = '{"name": "Danny", "age": "function () {return 28;}", "birthDate":"1995-7-14", "city": "Chicago"}';
+
+        personObject2 = JSON.parse(person2, function(key, value) {
+            if (key == "birthDate") {
+                return new Date(value);
+            } else {
+                return value;
+            }
+        });
+
+        personObject2.age = eval("(" + personObject2.age + ")");
+
+        function changeHeader() {
+            document.getElementById("header1").innerHTML = personObject.name + " " + personObject.age + " " + personObject.birthDate + " " + personObject.city + "<br />" + personObject2.name + " " + personObject2.age() + " " + personObject2.birthDate + " " + personObject2.city;
+        }
+    </script>
+</body>
+
+</html>

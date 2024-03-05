@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <div class="demo">
+        <p id="first">first paragraph</p>
+        <p id="second">second paragraph</p>
+        <p id="third">third paragraph</p>
+    </div>
+
+    <script>
+        text1 = document.getElementsByClassName("demo").firstChild.nodeValue;
+        console.log(text1);
+
+        text2 = document.getElementsByClassName("demo").childNodes[1].nodeValue;
+        console.log(text2);
+    </script>
+
+</html>

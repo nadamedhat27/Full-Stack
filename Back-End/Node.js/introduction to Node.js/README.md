@@ -6,15 +6,15 @@
 
 - ## Why Node.js
 
-  - Javascript
+  - JavaScript
     > Can be a curse or a blessing depending on what language you are comfortable with.
 
-    <img src="./Docs/javascript-the-good-parts.jpg" height="200" />
+    <img src="javascript-the-good-parts.jpg" height="200" />
 
   - `npm` (Node Package Manager)
       > In January 2017 over 350000 packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth, and you can be sure there is a package for (almost!) everything.
 
-  - Ability to keep data in native JSON (javascript object notation) format.
+  - Ability to keep data in native JSON (JavaScript object notation) format.
       
   - Wide range of hosting options.
 
@@ -49,11 +49,11 @@
 
   To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.
 
-  ![run command](./Docs/nodejs-server-run.png)
+  ![run command](nodejs-server-run.png)
 
   Firefox browser output:
 
-  ![server output](./Docs/nodejs-server-output.png)
+  ![server output](nodejs-server-output.png)
 
   To include `http` module:
 

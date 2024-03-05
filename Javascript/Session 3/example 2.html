@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <h1 id="header1">Big Title</h1>
+
+    <button onclick="changeHeader()">Click to change title</button>
+
+    <script>
+        oldMembers = '["Youssef", "Nada", "Ogy"]';
+        oldMembersArr = JSON.parse(oldMembers);
+
+        function changeHeader() {
+            document.getElementById("header1").innerHTML = "Old Member are: " + oldMembersArr[0] + ", " + oldMembersArr[1] + ", " + oldMembersArr[2];
+        }
+    </script>
+</body>
+
+</html>

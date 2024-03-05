@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <h1 id="header1">Big Title</h1>
+
+    <button onclick="changeHeader()">Click to change title</button>
+
+    <script>
+        personOriginalObject = {
+            name: "John",
+            age: function() {
+                return 31;
+            },
+            city: "New York"
+        }
+
+        personOriginalObject.age = personOriginalObject.age.toString();
+
+        personJson = JSON.stringify(personOriginalObject);
+        localStorage.setItem("person1", personJson);
+
+
+        person = localStorage.getItem("person1");
+        personObject = JSON.parse(person);
+
+        personObject.age = eval("(" + personObject.age + ")");
+
+        function changeHeader() {
+            document.getElementById("header1").innerHTML = personObject.name + " " + personObject.age() + " " + personObject.city;
+        }
+    </script>
+</body>
+
+</html>
