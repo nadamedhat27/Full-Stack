@@ -9,6 +9,8 @@
 ----------------------------------------------------------------
 - ## Table of Contents
 
+  ### [HTML Tutorial](./Front-End/HTML/)
+
   ### JavaScript
   | Sessions | Description |
   |------|------|
@@ -27,7 +29,7 @@
   |------|------|
   | Session 1 | <ul> <li> [Introduction to Node.js](./Back-End/Node.js/introduction%20to%20Node.js/) <li> [Modules](./Back-End/Node.js/modules/basic_modules/) </ul> |
   | Session 2 | <ul> <li> [Streams](./Back-End/Node.js/streams/) <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
-
+  | Session 3 | <ul> <li> [Express](./Back-End/Node.js/express/) </ul> |
 - ## What You Need To Learn These Technologies?
   
   - Text Editor (Visual Studio Code, Atom).
