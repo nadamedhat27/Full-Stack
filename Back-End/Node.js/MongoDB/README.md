@@ -270,6 +270,19 @@ Student.find()
 
 ```
 
+EXTRA: using the where method
+
+``` javascript
+Student.where('age').gt(18).where('grade').equals('A') 
+  // where age > 18 and grade == 'a'
+  .then(result => {
+    console.log(result);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
+
 To find with a condition
 
 ```javascript
@@ -281,6 +294,7 @@ Student.find({ level: 3 })
     console.log(err);
   });
 ```
+
 
 
 Update
