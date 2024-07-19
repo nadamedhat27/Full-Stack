@@ -14,7 +14,19 @@
   |------|------|
   | [Session 1](./Javascript/Session%201/) | <ul> <li>Introduction to JavaScript <li>How to link? <li> Output <li>Variables <li> Operators <li> Data Types <li> Functions <li> Objects <li> If statements <li> Switch case <li> For loop <li> For/in loop <li> For/of loop <li> While loop <li> Break & Continue <li> Arrow functions <li> Modules <li> Classes <li> Intro to JSON   </ul> |
   | [Session 2](./Javascript/Session%202/) | <ul> <li> DOM <li> BOM </ul> |
+  | [Session 3](./Javascript/Session%203/) | <ul> <li> JSON <li> API </ul> |
+
+
+  ### React.js
+  | Sessions | Description |
+  |------|------|
+  | Session 1 | <ul> <li> [Introduction to React.js](./Front-End/React.js/introduction%20to%20React.js/) </ul> |
   
+  ### Node.js
+  | Sessions | Description |
+  |------|------|
+  | Session 1 | <ul> <li> [Introduction to Node.js](./Back-End/Node.js/introduction%20to%20Node.js/) <li> [Modules](./Back-End/Node.js/modules/basic_modules/) </ul> |
+  | Session 2 | <ul> <li> [Streams](./Back-End/Node.js/streams/) <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
 
 - ## What You Need To Learn These Technologies?
   
