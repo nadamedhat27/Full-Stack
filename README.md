@@ -21,12 +21,21 @@
   | Sessions | Description |
   |------|------|
   | Session 1 | <ul> <li> [Introduction to React.js](./Front-End/React.js/introduction%20to%20React.js/) </ul> |
+  | Session 2 | <ul> <li> [React Components](./Front-End/React.js/React%20Components/) </ul> |
+  | Session 3 | <ul> <li> [Manage State](./Front-End/React.js/Manage%20State%20in%20React/) </ul> |
+  | Session 4 | <ul> <li> [Events](./Front-End/React.js/React%20Events/) </ul> |
+  | Session 5 | <ul> <li> [Forms](./Front-End/React.js/Forms%20in%20React.js/) </ul> |
+  | Session 6 | <ul> <li> [Router](./Front-End/React.js/React%20Router/) </ul> |
   
   ### Node.js
   | Sessions | Description |
   |------|------|
-  | Session 1 | <ul> <li> [Introduction to Node.js](./Back-End/Node.js/introduction%20to%20Node.js/) <li> [Modules](./Back-End/Node.js/modules/basic_modules/) </ul> |
-  | Session 2 | <ul> <li> [Streams](./Back-End/Node.js/streams/) <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
+  | Session 1 | <ul> <li> [Introduction to Node.js](./Back-End/Node.js/introduction%20to%20Node.js/) </ul> |
+  | Session 2 | <ul> <li> [Modules](./Back-End/Node.js/modules/basic_modules/) </ul> |
+  | Session 3 | <ul> <li> [Streams](./Back-End/Node.js/streams/) |
+  | Session 4 | <ul> <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
+  | Session 5 | <ul> <li> [Express](./Back-End/Node.js/express) |
+  
 
 - ## What You Need To Learn These Technologies?
   
