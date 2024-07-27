@@ -39,6 +39,7 @@ dog.on('bark', () => {
 
 dog.emit('bark');
 ```
+
 output : 
 Woof! Woof!
 =======================
