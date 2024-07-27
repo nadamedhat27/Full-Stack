@@ -35,11 +35,13 @@
   | Session 3 | <ul> <li> [Streams](./Back-End/Node.js/streams/) |
   | Session 4 | <ul> <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
   | Session 5 | <ul> <li> [Express](./Back-End/Node.js/express) |
+  | Session 6 | <ul> <li> [Events](./Back-End/Node.js/event) + [File System](./Back-End/Node.js/file%20system) |
+
   
 
 - ## What You Need To Learn These Technologies?
   
-  - Text Editor (Visual Studio Code, Atom).
+  - Text Editor (Visual Studio Code, Zed, Vim/NeoVim).
   - Internet Browser (Chrome, Edge, Firefox, Opera, Safari, ...etc.).
   - Knowledge in Internet and the operating system you use (Linux, Mac, Windows, ...etc.).
   - Have a Target.

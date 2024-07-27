@@ -1,39 +1,93 @@
-// bun
-// import express from 'express' 
-// import { mongoose } from 'mongoose';
+const express = require("express");
+const morgan = require("morgan");
+const mongoose = require("mongoose");
+const Blog = require("./models/blog");
 
-//node
-const express = require('express'); 
-const mongoose = require('mongoose');
-const Student = require('./Schemas/studentSchema');
-
+// express app
 const app = express();
-const port = 3000;
 
-const dbURL = 'mongodb://localhost:27017'
-mongoose.connect(dbURL, {})
-  .then((res)=> console.log("Connected to DB"))
-  .catch((err)=> console.log("Failed to connect" + err))
+// connect to mongodb & listen for requests
+const dbURL = "mongodb://localhost:27017";
 
-const newStudent = new Student({
-  name: 'Ahmed',
-  age: 19,
-  email: 'ak@ak.com',
-  level: 3,
-  registeredCourses: [
-    { courseName: 'Math', grade: C },
-    { courseName: 'Web Programming', grade: B },
-    { courseName: 'Data Structures', grade: A }
-  ]
+mongoose
+  .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => app.listen(3000))
+  .catch((err) => console.log(err));
+
+// register view engine
+app.set("view engine", "ejs");
+
+// middleware & static files
+app.use(express.static("public"));
+app.use(morgan("dev"));
+app.use((req, res, next) => {
+  res.locals.path = req.path;
+  next();
 });
 
-app.get('/', (req, res) => {
-  newStudent.save()
-    .then((result)=>{
-      res.send(result)
-    }).catch((err)=> res.send("Couldn't save to the database"))
+// mongoose & mongo tests
+app.get("/add-blog", (req, res) => {
+  const blog = new Blog({
+    title: "new blog",
+    snippet: "about my new blog",
+    body: "more about my new blog",
+  });
+
+  blog
+    .save()
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.get("/all-blogs", (req, res) => {
+  Blog.find()
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.get("/single-blog", (req, res) => {
+  Blog.findById("5ea99b49b8531f40c0fde689")
+    .then((result) => {
+      res.send(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.get("/", (req, res) => {
+  res.redirect("/blogs");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" });
+});
+
+// blog routes
+app.get("/blogs/create", (req, res) => {
+  res.render("create", { title: "Create a new blog" });
+});
+
+app.get("/blogs", (req, res) => {
+  Blog.find()
+    .sort({ createdAt: -1 })
+    .then((result) => {
+      res.render("index", { blogs: result, title: "All blogs" });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+// 404 page
+app.use((req, res) => {
+  res.status(404).render("404", { title: "404" });
 });
