@@ -38,6 +38,7 @@
   | Session 6 | <ul> <li> [Events](./Back-End/Node.js/event) </li> <li> [File System](./Back-End/Node.js/file%20system) |
 
   
+----------------------------------------------------------------
 
 - ## What You Need To Learn These Technologies?
   
@@ -49,6 +50,21 @@
   - Start any idea (ideas for projects you do within the tutorial)
   - Always search before asking.
 
+----------------------------------------------------------------
+- ## Road Maps
+    - Front End Developer:
+      1. HTML.
+      2. CSS.
+      3. JavaScript.
+      4. React.js or Angular.js of Vue.js.
+    - Back End Developer:
+      - JavaScript
+        1. HTML (Optional).
+        2. CSS (Optional).
+        3. JavaScript.
+        4. Node.js.
+   
+----------------------------------------------------------------
 - ## How to contribute 🤝
 
   1. Choose an issue and comment on it that you will take this issue.
