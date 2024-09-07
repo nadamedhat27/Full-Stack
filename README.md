@@ -26,6 +26,7 @@
   | Session 4 | <ul> <li> [Events](./Front-End/React.js/React%20Events/) </ul> |
   | Session 5 | <ul> <li> [Forms](./Front-End/React.js/Forms%20in%20React.js/) </ul> |
   | Session 6 | <ul> <li> [Router](./Front-End/React.js/React%20Router/) </ul> |
+  | Session 7 | <ul> <li> [Hooks](./Front-End/React.js/React%20Hooks/) </ul> |
   
   ### Node.js
   | Sessions | Description |
@@ -36,6 +37,8 @@
   | Session 4 | <ul> <li> [HTTP Module](./Back-End/Node.js/http%20module/) |
   | Session 5 | <ul> <li> [Express](./Back-End/Node.js/express) |
   | Session 6 | <ul> <li> [Events](./Back-End/Node.js/event) </li> <li> [File System](./Back-End/Node.js/file%20system) |
+  | Session 7 | <ul> <li> [MongoDB](./Back-End/Node.js/MongoDB/) </li> |
+  | Session 8 | <ul> <li> [Middleware](./Back-End/Node.js/middleWare/) </li> |
 
   
 ----------------------------------------------------------------
@@ -56,7 +59,7 @@
       1. HTML.
       2. CSS.
       3. JavaScript.
-      4. React.js or Angular.js of Vue.js.
+      4. React.js or Angular.js or Vue.js.
     - Back End Developer:
       - JavaScript
         1. HTML (Optional).

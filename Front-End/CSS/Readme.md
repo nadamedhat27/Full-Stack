@@ -93,4 +93,23 @@
 
   - So, what is the difference between ID and class?
 
-    :arrow_right: the class attribute can be specified to more than one element making them as a group and we can style them all together with the same code, on the other hand, the ID attribute can be specified to a single element only and styling this ID means that we style this element only.
+    :arrow_right: the class attribute can be specified to more than one element making them as a group and we can style them all together with the same code, on the other hand, the ID attribute can be specified to a single element only and styling this ID means that we style this element only, usually, it's not the best practice to use id for styling.
+
+----------------------------------------------------------------
+
+- ## Comments
+
+   Comments are written like:
+  
+    ```css
+    // Comments  
+    ```
+    this is for the one-line comments, but if you want to write a comment containing multiple lines then:
+
+    ```css
+    /* 
+      multi-line comment
+      another comment
+    */
+    ```
+    We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
