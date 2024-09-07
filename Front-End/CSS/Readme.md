@@ -5,8 +5,13 @@
 ## Agenda
 
 - [What is CSS?](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#what-is-CSS)
-
-
+- [Why CSS?](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#why-css)
+- [Prerequisites](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#prerequisites)
+- [How to import CSS into HTML](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#how-to-import-css-into-html)
+- [Basic Syntax](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#basic-syntax)
+- [Selectors](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#selectors)
+- [Comments](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#comments)
+  
 ----------------------------------------------------------------
 
 - ## What is CSS?
@@ -52,6 +57,9 @@
       ```html 
         <link rel="stylesheet" href="path/to/the/file">
       ```
+  - So, what is the difference between inline, internal and external methods?
+
+    :arrow_right: the inline method is much more powerful than the others, if there are any conflicts between inline and other methods the inline method will win over them.
 
 ----------------------------------------------------------------
 
@@ -73,28 +81,35 @@
   
   1. **Element name:** Just type the target element name and start styling.
       
-      ```css 
-        div {
-          // style
-        }
-      ```
-  2. **Class name:** First you need to specify the class name for the target element in the html code and then use this class name with a `.` before it.
       ```css
-        .firstclass {
-          // style
-        }
-      ``` 
-  3. **ID name:** Same as above, you need to specify the ID for the target element in the html code and then use this ID name with a `#` before it.
-      ```css
-      #firstID {
+      div {
         // style
       }
       ```
+      Note: if you apply any style with element name as a selector, this style will be applied to all elements with the same name, in this example above, the styling will be applied to all div elements.
+
+  2. **Identifier:**
+     - **Class name:** First you need to specify the class name for the target element in the html code and then use this class name with a `.` before it.
+        ```css
+        .firstclass {
+          // style
+        }
+        ``` 
+        Note: this solves the problem in the previous point, if you want to apply a styling to a specific element or a group of elements, then use classes.
+
+     - **ID name:** Same as above, you need to specify the ID for the target element in the html code and then use this ID name with a `#` before it.
+        ```css
+        #firstID {
+          // style
+        }
+        ```
+     - **Important Note:** you can't start a class name or ID with a number, but instead you can use `-` or `_`, also the naming convention is special in CSS, we use kebab case, firstly, all characters are small and between different words we put a hyphen `-` like `first-class`.
 
   - So, what is the difference between ID and class?
 
     :arrow_right: the class attribute can be specified to more than one element making them as a group and we can style them all together with the same code, on the other hand, the ID attribute can be specified to a single element only and styling this ID means that we style this element only, usually, it's not the best practice to use id for styling.
 
+  
 ----------------------------------------------------------------
 
 - ## Comments
