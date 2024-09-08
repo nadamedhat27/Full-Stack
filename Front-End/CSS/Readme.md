@@ -11,6 +11,7 @@
 - [Basic Syntax](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#basic-syntax)
 - [Selectors](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#selectors)
 - [Comments](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#comments)
+- [Background](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#background)
   
 ----------------------------------------------------------------
 
@@ -128,3 +129,45 @@
     */
     ```
     We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
+
+----------------------------------------------------------------
+
+- ## Background
+  The background is a property that allows us to put a background for any element, it can be color, gradient, or simply a picture, if the background is a color then it's written like this:
+  ```css 
+  div {
+    background-color: black;
+  }
+  ```
+  the value of the `background-color` property can be the color name like `black` or `white`, but not all colors have names because they are counted millions, so there are two other methods to present colors:
+  
+  1. **RGB Method:** the value of the RGB color contains three parts the first number represents Red, and second is Green, while the third is Blue, we can add a value from `0` to `1` for the opacity and called Alpha Channel, it's written like this:
+      ```css
+      div {
+        background-color: rgb(255, 255, 255, 0);
+      }
+      ```
+      the value of each of the three colors is from `0` to `255`, from black to the pure color respectively, and if we write them all the highest value then we get white.
+      ***
+  2. **Hexadecimal Method:** this method is only a simpler way to represent colors derived from the previous method, the hexadecimal representation is a famous way to represent numbers, the decimal bit is from `0` to `9`, but the hexadecimal bit is from `0` to `f` which is `15`, and if we write `ff` we get `255`, so the first 2 bits are for Red and the second 2 bits are for Green and the last 2 bits are for Blue, also we can add 2 bits for the opacity and called Alpha Channel, it's overwhelming I know but if you want more explanation, visit [this link](https://www.mathsisfun.com/hexadecimal-decimal-colors.html), and it's written like this:
+      
+      ```css 
+      div {
+        background-color: #ffffff00;
+      }
+      ```
+  ***
+  Let's go to another property called `background-image`, by this property we can add an image to any element, written like this:
+  ```css
+  div {
+    background-image: url("path/to/file/background.png");
+  }
+  ``` 
+  the background image extension is preferred to be `jpg`, `png` or `jpeg`.
+  ***
+  The `background-repeat` property is used to repeat the image from previous property horizontally and vertically, it's default value is repeat but we cand change it to `repeat-x`, `repeat-y` or `no-repeat`, so it's written like:
+  ```css 
+  div {
+    background-repeat: repeat;
+  }
+  ```
