@@ -171,3 +171,36 @@
     background-repeat: repeat;
   }
   ```
+  ***
+  The `background-attachment` property is used to set the background image scrollable or not, so if its value is `scroll`, so it's on a its place and if you scroll it's gone, but if it's `fixed`, it will be with you when scrolling. so it's written like:
+  ```css 
+  div {
+    background-attachment: fixed;
+  }
+  ```
+  ***
+  The `background-position` property is used to set the position of the background image, it's value consists of two sections, the first is for distance from left and the second is for distance from top, it's written like:
+  ```css
+  div {
+    background-position: left top;
+  }
+  ```
+  the value we can write for the first section can be `left`, `center`, or `right`, while for the second section it can be `top`, `center`, or `bottom`, but also we can specify the position by numbers measured in `%`, `ch`, `cm`, `em`, `ex`, `fr`, `in`, `mm`, `pc`, `pt`, `px`, or `rem`. BTW the `px` is the most popular measurement used. so by `px` it's written like:
+  ```css 
+  div {
+    background-position: 200px 100px;
+  }
+  ```
+  ***
+  The the `background-size` property is used to set the background size on the page, the value `auto` is actually the default value and the image is displayed in its original size, the value `cover` displays the image to cover all of the element it's used in (it can be stretched or cropped), the value `contain` displays the full image whatever the content is, so it's written like:
+  ```css
+  div {
+    background-size: cover;
+  }
+  ``` 
+  also this property consists of two sections, the first is for width, and the second is for height (also using the measures in the previous section), so it's written like:
+  ```css 
+  div {
+    background-size: 500px 300px;
+  }
+  ```
