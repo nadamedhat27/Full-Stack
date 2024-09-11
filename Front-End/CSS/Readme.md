@@ -118,17 +118,12 @@
    Comments are written like:
   
     ```css
-    // Comments  
-    ```
-    this is for the one-line comments, but if you want to write a comment containing multiple lines then:
-
-    ```css
     /* 
       multi-line comment
       another comment
-    */
+    */    
     ```
-    We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
+    this is for the one-line comments and multiple-lines comments, We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
 
 ----------------------------------------------------------------
 
@@ -204,3 +199,49 @@
     background-size: 500px 300px;
   }
   ```
+
+----------------------------------------------------------------
+
+- ## The 3 Outlines
+  ![the 3 outlines](imgs/image.png)
+  
+  - **Padding:** is the distance out of the content to the border.
+  - **border:** is the line between padding and margin.
+  - **margin:** is the distance from the border to the other element.
+  
+----------------------------------------------------------------
+
+- ## Padding 
+  it's written like this:
+  ```css
+  div {
+    padding: 10px;
+  }
+  ```
+  this means that the `10px` will be added to the padding in the four sides `top`, `right`, `bottom` and `left`, so we can write it like this:
+  ```css
+  div {
+    padding: 10px 20px 30px 20px;
+  }
+  ```
+  so these distances will be added to `top`, `right`, `bottom` and `left` respectively, but if we write it like this:
+  ```css
+  div {
+    padding: 10px 20px;
+  }
+  ```
+  the `10px` will be added to the `top` and `bottom` padding, and the `20px` will be added to the `right` and `left` padding, so every missing value will be copied from its opposite value. 
+  
+  BTW: you can write only 3 values if the left is same as the right.
+
+  also we can specify the padding side by these properties:
+  ```css
+  div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  ```
+  all of these properties can be specified by any measurement shown above but we can't set it to a negative value.
+  
