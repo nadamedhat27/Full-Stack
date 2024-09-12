@@ -203,7 +203,7 @@
 ----------------------------------------------------------------
 
 - ## The 3 Outlines
-  ![the 3 outlines](imgs/image.png)
+  ![the 3 outlines](imgs/the-three-outlines.png)
   
   - **Padding:** is the distance out of the content to the border.
   - **border:** is the line between padding and margin.
@@ -243,5 +243,29 @@
     padding-left: 20px;
   }
   ```
-  all of these properties can be specified by any measurement shown above but we can't set it to a negative value.
-  
+  all of these properties can be specified by any measurement shown above but we can't set it to a 
+  ***negative*** value.
+
+----------------------------------------------------------------
+
+- ## Margin
+  same as the padding property, all things explained there can be applied here, and it's written like this:
+  ```css
+  div {
+    margin: 20px 10px 30px 15px; 
+    /* 
+      Same as:
+      margin-top: 20px;
+      margin-right: 10;
+      margin-bottom: 30px;
+      margin-left: 15px;
+    */
+  }
+  ```
+  but there is only one difference between the padding and the margin, we can use ***negative*** values, which means we are subtracting from the distance between the element and the other elements or generally moving our element in the page. like this:
+  ```css 
+  div {
+    margin-top: -40px;
+  }
+  ```
+  ![Margin With Negative](imgs/margin-with-negative.png)
