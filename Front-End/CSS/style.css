@@ -1,5 +1,5 @@
 div {
   background-color: #ff000072;
-  background-attachment: fixed;
-  margin-top: -40px;
+  border: 10px solid red ;
+  border-radius: 10px;
 }

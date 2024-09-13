@@ -38,7 +38,7 @@
 
 - ## How to import CSS into HTML
   
-  we have 3 methods to style the HTML with CSS or to apply our CSS styles to the HTML structure:
+  We have 3 methods to style the HTML with CSS or to apply our CSS styles to the HTML structure:
   
   1. **Inline Method:** We just add the style inside the target element.
       
@@ -60,7 +60,7 @@
       ```
   - So, what is the difference between inline, internal and external methods?
 
-    :arrow_right: the inline method is much more powerful than the others, if there are any conflicts between inline and other methods the inline method will win over them.
+    :arrow_right: The inline method is much more powerful than the others, if there are any conflicts between inline and other methods the inline method will win over them.
 
 ----------------------------------------------------------------
 
@@ -73,7 +73,7 @@
       another-property: Value;
     }
   ```
-  so we are going to learn what are the selectors and properties and how to add values to the properties.
+  So we are going to learn what are the selectors and properties and how to add values to the properties.
 
 ----------------------------------------------------------------
 
@@ -96,7 +96,7 @@
           // style
         }
         ``` 
-        Note: this solves the problem in the previous point, if you want to apply a styling to a specific element or a group of elements, then use classes.
+        Note: This solves the problem in the previous point, if you want to apply a styling to a specific element or a group of elements, then use classes.
 
      - **ID name:** Same as above, you need to specify the ID for the target element in the html code and then use this ID name with a `#` before it.
         ```css
@@ -104,11 +104,11 @@
           // style
         }
         ```
-     - **Important Note:** you can't start a class name or ID with a number, but instead you can use `-` or `_`, also the naming convention is special in CSS, we use kebab case, firstly, all characters are small and between different words we put a hyphen `-` like `first-class`.
+     - **Important Note:** You can't start a class name or ID with a number, but instead you can use `-` or `_`, also the naming convention is special in CSS, we use kebab case, firstly, all characters are small and between different words we put a hyphen `-` like `first-class`.
 
   - So, what is the difference between ID and class?
 
-    :arrow_right: the class attribute can be specified to more than one element making them as a group and we can style them all together with the same code, on the other hand, the ID attribute can be specified to a single element only and styling this ID means that we style this element only, usually, it's not the best practice to use id for styling.
+    :arrow_right: The class attribute can be specified to more than one element making them as a group and we can style them all together with the same code, on the other hand, the ID attribute can be specified to a single element only and styling this ID means that we style this element only, usually, it's not the best practice to use id for styling.
 
   
 ----------------------------------------------------------------
@@ -123,7 +123,7 @@
       another comment
     */    
     ```
-    this is for the one-line comments and multiple-lines comments, We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
+    This is for the one-line comments and multiple-lines comments, We write Comments when we write code that isn't completely clear or new to this language, Comments helps you and your teammates to understand your code very well.
 
 ----------------------------------------------------------------
 
@@ -134,7 +134,7 @@
     background-color: black;
   }
   ```
-  the value of the `background-color` property can be the color name like `black` or `white`, but not all colors have names because they are counted millions, so there are two other methods to present colors:
+  The value of the `background-color` property can be the color name like `black` or `white`, but not all colors have names because they are counted millions, so there are two other methods to present colors:
   
   1. **RGB Method:** the value of the RGB color contains three parts the first number represents Red, and second is Green, while the third is Blue, we can add a value from `0` to `1` for the opacity and called Alpha Channel, it's written like this:
       ```css
@@ -142,7 +142,7 @@
         background-color: rgb(255, 255, 255, 0);
       }
       ```
-      the value of each of the three colors is from `0` to `255`, from black to the pure color respectively, and if we write them all the highest value then we get white.
+      The value of each of the three colors is from `0` to `255`, from black to the pure color respectively, and if we write them all the highest value then we get white.
       ***
   2. **Hexadecimal Method:** this method is only a simpler way to represent colors derived from the previous method, the hexadecimal representation is a famous way to represent numbers, the decimal bit is from `0` to `9`, but the hexadecimal bit is from `0` to `f` which is `15`, and if we write `ff` we get `255`, so the first 2 bits are for Red and the second 2 bits are for Green and the last 2 bits are for Blue, also we can add 2 bits for the opacity and called Alpha Channel, it's overwhelming I know but if you want more explanation, visit [this link](https://www.mathsisfun.com/hexadecimal-decimal-colors.html), and it's written like this:
       
@@ -180,7 +180,7 @@
     background-position: left top;
   }
   ```
-  the value we can write for the first section can be `left`, `center`, or `right`, while for the second section it can be `top`, `center`, or `bottom`, but also we can specify the position by numbers measured in `%`, `ch`, `cm`, `em`, `ex`, `fr`, `in`, `mm`, `pc`, `pt`, `px`, or `rem`. BTW the `px` is the most popular measurement used. so by `px` it's written like:
+  The value we can write for the first section can be `left`, `center`, or `right`, while for the second section it can be `top`, `center`, or `bottom`, but also we can specify the position by numbers measured in `%`, `ch`, `cm`, `em`, `ex`, `fr`, `in`, `mm`, `pc`, `pt`, `px`, or `rem`. BTW the `px` is the most popular measurement used. so by `px` it's written like:
   ```css 
   div {
     background-position: 200px 100px;
@@ -193,7 +193,7 @@
     background-size: cover;
   }
   ``` 
-  also this property consists of two sections, the first is for width, and the second is for height (also using the measures in the previous section), so it's written like:
+  Also this property consists of two sections, the first is for width, and the second is for height (also using the measures in the previous section), so it's written like:
   ```css 
   div {
     background-size: 500px 300px;
@@ -212,25 +212,25 @@
 ----------------------------------------------------------------
 
 - ## Padding 
-  it's written like this:
+  It's written like this:
   ```css
   div {
     padding: 10px;
   }
   ```
-  this means that the `10px` will be added to the padding in the four sides `top`, `right`, `bottom` and `left`, so we can write it like this:
+  This means that the `10px` will be added to the padding in the four sides `top`, `right`, `bottom` and `left`, so we can write it like this:
   ```css
   div {
     padding: 10px 20px 30px 20px;
   }
   ```
-  so these distances will be added to `top`, `right`, `bottom` and `left` respectively, but if we write it like this:
+  So these distances will be added to `top`, `right`, `bottom` and `left` respectively, but if we write it like this:
   ```css
   div {
     padding: 10px 20px;
   }
   ```
-  the `10px` will be added to the `top` and `bottom` padding, and the `20px` will be added to the `right` and `left` padding, so every missing value will be copied from its opposite value. 
+  The `10px` will be added to the `top` and `bottom` padding, and the `20px` will be added to the `right` and `left` padding, so every missing value will be copied from its opposite value. 
   
   BTW: you can write only 3 values if the left is same as the right.
 
@@ -243,13 +243,13 @@
     padding-left: 20px;
   }
   ```
-  all of these properties can be specified by any measurement shown above but we can't set it to a 
+  All of these properties can be specified by any measurement shown above but we can't set it to a 
   ***negative*** value.
 
 ----------------------------------------------------------------
 
 - ## Margin
-  same as the padding property, all things explained there can be applied here, and it's written like this:
+  Same as the padding property, all things explained there can be applied here, and it's written like this:
   ```css
   div {
     margin: 20px 10px 30px 15px; 
@@ -262,10 +262,73 @@
     */
   }
   ```
-  but there is only one difference between the padding and the margin, we can use ***negative*** values, which means we are subtracting from the distance between the element and the other elements or generally moving our element in the page. like this:
+  But there is only one difference between the padding and the margin, we can use ***negative*** values, which means we are subtracting from the distance between the element and the other elements or generally moving our element in the page. like this:
   ```css 
   div {
     margin-top: -40px;
   }
   ```
   ![Margin With Negative](imgs/margin-with-negative.png)
+
+----------------------------------------------------------------
+
+- ## Border
+  Same as the padding and margin property, all things explained there can be applied here, and it's written like this:
+
+  ```css
+  div {
+    border-width: 10px;
+    /*
+      Same as:
+      border-top-width: 10px;
+      border-right-width: 10px;
+      border-bottom-width: 10px;
+      border-left-width: 10px;
+    */
+  }
+  ```
+  But here we can specify the border color like this:
+  ```css
+  div {
+    border-color: red;
+    /*
+      Same as:
+      border-top-color: red;
+      border-right-color: red;
+      border-bottom-color: red;
+      border-left-color: red;
+    */
+  }
+  ```
+  And we can specify the border style like this:
+  ```css
+  div {
+    border-style: solid;
+    /*
+      Same as:
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+    */
+  }
+  ```
+  We can change the border sharpness by `border-radius` like this:
+  ```css
+  div {
+    border-radius: 5px;
+    /*
+      Same as:
+      border-top-radius: 5px;
+      border-right-radius: 5px;
+      border-bottom-radius: 5px;
+      border-left-radius: 5px;
+    */
+  }
+  ```
+  Last thing we can specify the border width, style, and color by a shorthand statement like this:
+  ```css
+  div {
+    border: 10px solid red;
+  }
+  ```
