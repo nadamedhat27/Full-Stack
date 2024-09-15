@@ -332,3 +332,20 @@
     border: 10px solid red;
   }
   ```
+
+----------------------------------------------------------------
+
+- ## Outline
+  This property is used to add a border same as `border` property but with some differences. It's written like this:
+  ```css 
+  div {
+    outline: 10px solid red;
+    /*
+      Same as:
+      outline-width: 10px;
+      outline-style: solid;
+      outline-color: red;
+    */
+  }
+  ```
+  So, it means *No Sides* like `outline-right` or `outline-left`. The other difference is that the border size is taken from the element but the outline is not like that, it takes size from outside the element.
