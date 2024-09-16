@@ -349,3 +349,33 @@
   }
   ```
   So, it means *No Sides* like `outline-right` or `outline-left`. The other difference is that the border size is taken from the element but the outline is not like that, it takes size from outside the element.
+
+----------------------------------------------------------------
+
+- ## Display
+  It's responsible for the way of displaying the element, there are 3 different values this property can have: `block`, `inline-block`, and `inline`.
+  
+  1. **Block:** 
+      - The width of the element is set to the full page width by default (if we didn't specify the width).
+      - Adds line breaks before and after the element.
+      - We can specify the padding, margin, width, and height of the element or any other property.
+  2. **Inline:**
+      - We can't specify the width or the height of the element.
+      - Doesn't add line breaks before and after the element.
+      - We can specify the padding, and margin but only the left and right sides are respected not the top or bottom sides.
+      - Elements are side to side.
+  3. **Inline-Block:** It's a mix of the inline and the block.
+      - Doesn't add line breaks before and after the element.
+      - We can specify the padding, margin, width, and height of the element or any other property.
+      - Elements are side to side.
+  ```css
+  span {
+    display: inline-block;
+    /*
+      Other Examples:
+
+      -> display: inline;
+      -> display: block;
+    */
+  }
+  ```
