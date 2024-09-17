@@ -12,6 +12,12 @@
 - [Selectors](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#selectors)
 - [Comments](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#comments)
 - [Background](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#background)
+- [The 3 Outlines](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#the-3-outlines)
+- [Padding](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#padding)
+- [Margin](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#margin)
+- [Border](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#border)
+- [Outline](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#outline)
+- [Display](https://github.com/nadamedhat27/Full-Stack/tree/main/Front-End/CSS#display)
   
 ----------------------------------------------------------------
 
