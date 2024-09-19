@@ -385,3 +385,26 @@
     */
   }
   ```
+
+----------------------------------------------------------------
+
+- ## Element Visibility and Use Cases
+  We can use `display` and `Visibility` properties for managing the Visibility of the element. 
+
+  The difference between them is:
+  
+  1. `display`:
+   
+      ```css
+      div {
+        display: none;
+      }
+      ```
+      The element is completely gone from the page, and also the no space for it, **like: dropdown lists**
+  2.  `Visibility`: 
+      ```css 
+      div {
+        visibility: hidden;
+      }
+      ```
+      The element is only hidden but it's space still exists.
